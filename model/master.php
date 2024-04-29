@@ -5,10 +5,10 @@ class Mastermodel
     {
     }
 
-    //Hàm được dùng để đổ giá trị của bảng khi gán gtrj bảng 
+    //Hàm được dùng để đổ giá trị của bảng khi gán giá trị bảng 
     public static function get_all_from($table)
     {
-        $db = new connect();
+        $db = new Connect();
         $select = "select * from $table";
         $result = $db->getList($select);
         return $result;

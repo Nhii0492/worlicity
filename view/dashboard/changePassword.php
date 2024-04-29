@@ -12,20 +12,20 @@
 <!-- ============================ User Dashboard ================================== -->
 <section class="gray pt-5 pb-5">
     <div class="container-fluid">
-                    
+
         <div class="row">
-            
+
             <!-- dashboard navbar start -->
             <?php require_once 'navbar.php'; ?>
             <!-- dashboard navbar end -->
-            
+
             <div class="col-lg-9 col-md-8">
                 <div class="dashboard-body">
-                
+
                     <div class="dashboard-wraper">
-                    
+
                         <!-- Basic Information -->
-                        <div class="frm_submit_block">	
+                        <div class="frm_submit_block">
                             <h4>Đổi mật khẩu</h4>
                             <div class="frm_submit_wrap">
                                 <div class="form-row">
@@ -48,12 +48,12 @@
                             </div>
                         </div>
 
-                        
+
                     </div>
-                
+
                 </div>
             </div>
-            
+
         </div>
     </div>
 </section>

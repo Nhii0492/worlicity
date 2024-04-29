@@ -2,7 +2,7 @@
 require_once 'config/db.php';
 require_once 'model/LoginModel.php';
 require_once 'model/UserModel.php';
-require_once 'model/newsModel.php';
+require_once 'model/NewsModel.php';
 
 class DashBoardController
 {
@@ -36,15 +36,15 @@ class DashBoardController
         require_once 'view/dashboard/profile.php';
     }
 
-    // public function saveProperty()
-    // {
-    //     $user = $this->user;
-    //     $userId = $_SESSION["uauth"]["user_id"];
-    //     // Gọi hàm getAllNewsByUserId để lấy danh sách tin tức của user
-    //     $newsModel = new NewsModel();
-    //     $newsList = $newsModel->getAllNewsByUserId($userId);
-    //     require_once 'view/dashboard/saveProperty.php';
-    // }
+    public function saveProperty()
+    {
+        $user = $this->user;
+        $userId = $_SESSION["uauth"]["user_id"];
+        // Gọi hàm getAllNewsByUserId để lấy danh sách tin tức của user
+        $newsModel = new NewsModel();
+        $newsList = $newsModel->getAllNewsByUserId($userId);
+        require_once 'view/dashboard/saveProperty.php';
+    }
 
     public function myProperty()
     {
@@ -70,14 +70,13 @@ class DashBoardController
         require_once 'view/dashboard/package.php';
     }
 
-    // public function newProperty()
-    // {
-
-    //     $user = $this->user;
-    //     $newsModel = new NewsModel();
-    //     $tags = $newsModel->getAllTags();
-    //     require_once 'view/dashboard/newProperty.php';
-    // }
+    public function newProperty()
+    {
+        $user = $this->user;
+        $newsModel = new NewsModel();
+        $tags = $newsModel->getAllTags();
+        require_once 'view/dashboard/newProperty.php';
+    }
 
     public function submitProperty()
     {

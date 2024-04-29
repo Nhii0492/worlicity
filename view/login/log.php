@@ -39,7 +39,7 @@
                                             <label>Mật khẩu</label>
                                             <div class="input-with-icon">
                                                 <input type="password" class="form-control" name="password">
-                                                <i class="ti-unlock"></i>
+                                                <i class="ti-lock"></i>
                                             </div>
                                         </div>
 
@@ -80,11 +80,11 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Email</label>
+                                            <label>Số điện thoại</label>
                                             <div class="input-with-icon">
-                                                <!-- email -->
-                                                <input type="email" class="form-control" name="email">
-                                                <i class="ti-user"></i>
+                                                <!-- phone -->
+                                                <input type="text" class="form-control" name="phone">
+                                                <i class="ti-mobile"></i>
                                             </div>
                                         </div>
 
@@ -93,7 +93,7 @@
                                             <div class="input-with-icon">
                                                 <!-- password -->
                                                 <input type="password" class="form-control" name="password">
-                                                <i class="ti-unlock"></i>
+                                                <i class="ti-lock"></i>
                                             </div>
                                         </div>
 

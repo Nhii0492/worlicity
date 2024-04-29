@@ -25,14 +25,14 @@ class LoginModel extends Connect
         }
     }
 
-    public function register($username, $email, $password)
+    public function register($username, $phone, $password)
     {
         // Xử lý logic đăng ký
-        $query = "INSERT INTO users (username, email, password) VALUES (:username, :email, :password)";
+        $query = "INSERT INTO users (username, phone_number, password) VALUES (:username, :phone, :password)";
         $statement = $this->getConnection()->prepare($query);
         $hashedPassword = md5($password);
         $statement->bindParam(':username', $username);
-        $statement->bindParam(':email', $email);
+        $statement->bindParam(':phone', $phone);
         $statement->bindParam(':password', $hashedPassword);
         $result = $statement->execute();
 

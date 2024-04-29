@@ -161,155 +161,116 @@
 		</div>
 		<!-- ============================ Hero Banner End ================================== -->
 
-		<!-- ============================ Property Location ================================== -->
-		<section class="min">
+
+		<!-- ============================ Property Type Start ================================== -->
+		<section class="light-bg min">
 			<div class="container">
+
+				<!-- <div class="row">
+						<div class="col-lg-12 col-md-12">
+							<div class="sec-heading center">
+								<h2>Loại hình bất động sản</h2>
+								<p>Find All Type of Property.</p>
+							</div>
+						</div>
+					</div> -->
 
 				<div class="row justify-content-center">
 
-					<!-- Single Location -->
-					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
-							<div class="location_wrap_content visible">
-								<div class="location_wrap_content_first">
-									<h4>Hải Châu</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
+					<div class="col-lg col-md-4">
+						<!-- Single Category -->
+						<div class="property_cats_boxs">
+							<a href="grid-layout-with-sidebar.html" class="category-box">
+								<div class="property_category_short">
+									<div class="category-icon clip-1">
+										<i class="flaticon-beach-house-2"></i>
+									</div>
+
+									<div class="property_category_expand property_category_short-text">
+										<h4>Nhà gia đình</h4>
+										<p>122 bất động sản</p>
+									</div>
 								</div>
-							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-1.png);"></div>
-						</a>
+							</a>
+						</div>
 					</div>
 
-					<!-- Single Location -->
-					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
-							<div class="location_wrap_content visible">
-								<div class="location_wrap_content_first">
-									<h4>Thanh Khê</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
+					<div class="col-lg col-md-4">
+						<!-- Single Category -->
+						<div class="property_cats_boxs">
+							<a href="grid-layout-with-sidebar.html" class="category-box">
+								<div class="property_category_short">
+									<div class="category-icon clip-2">
+										<i class="flaticon-cabin"></i>
+									</div>
+
+									<div class="property_category_expand property_category_short-text">
+										<h4>Nhà & Biệt thự</h4>
+										<p>155 bất động sản</p>
+									</div>
 								</div>
-							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-2.png);"></div>
-						</a>
+							</a>
+						</div>
 					</div>
 
-					<!-- Single Location -->
-					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
-							<div class="location_wrap_content visible">
-								<div class="location_wrap_content_first">
-									<h4>Sơn Trà</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
+					<div class="col-lg col-md-4">
+						<!-- Single Category -->
+						<div class="property_cats_boxs">
+							<a href="grid-layout-with-sidebar.html" class="category-box">
+								<div class="property_category_short">
+									<div class="category-icon clip-3">
+										<i class="flaticon-apartments"></i>
+									</div>
+
+									<div class="property_category_expand property_category_short-text">
+										<h4>Căn hộ</h4>
+										<p>300 bất động sản</p>
+									</div>
 								</div>
-							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-3.png);"></div>
-						</a>
+							</a>
+						</div>
 					</div>
 
-					<!-- Single Location -->
-					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
-							<div class="location_wrap_content visible">
-								<div class="location_wrap_content_first">
-									<h4>Ngũ Hành Sơn</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
+					<div class="col-lg col-md-4">
+						<!-- Single Category -->
+						<div class="property_cats_boxs">
+							<a href="grid-layout-with-sidebar.html" class="category-box">
+								<div class="property_category_short">
+									<div class="category-icon clip-4">
+										<i class="flaticon-student-housing"></i>
+									</div>
+
+									<div class="property_category_expand property_category_short-text">
+										<h4>Studio</h4>
+										<p>80 bất động sản</p>
+									</div>
 								</div>
-							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-4.png);"></div>
-						</a>
-					</div>
-					<!-- </div>
-				<div class="row justify-content-center"> -->
-					<!-- Single Location -->
-					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
-							<div class="location_wrap_content visible">
-								<div class="location_wrap_content_first">
-									<h4>Liên Chiểu</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
-								</div>
-							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-5.png);"></div>
-						</a>
+							</a>
+						</div>
 					</div>
 
-					<!-- Single Location -->
-					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
-							<div class="location_wrap_content visible">
-								<div class="location_wrap_content_first">
-									<h4>Hòa Vang</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
-								</div>
-							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-6.png);"></div>
-						</a>
-					</div>
+					<div class="col-lg col-md-4">
+						<!-- Single Category -->
+						<div class="property_cats_boxs">
+							<a href="grid-layout-with-sidebar.html" class="category-box">
+								<div class="property_category_short">
+									<div class="category-icon clip-5">
+										<i class="flaticon-modern-house-4"></i>
+									</div>
 
-					<!-- Single Location -->
-					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
-							<div class="location_wrap_content visible">
-								<div class="location_wrap_content_first">
-									<h4>Cẩm Lệ</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
+									<div class="property_category_expand property_category_short-text">
+										<h4>Villa Chung cư</h4>
+										<p>80 bất động sản</p>
+									</div>
 								</div>
-							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-7.png);"></div>
-						</a>
-					</div>
-
-					<!-- Single Location -->
-					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
-							<div class="location_wrap_content visible">
-								<div class="location_wrap_content_first">
-									<h4>Hoàng Sa</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
-								</div>
-							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-1.png);"></div>
-						</a>
+							</a>
+						</div>
 					</div>
 
 				</div>
-
 			</div>
 		</section>
-		<!-- ============================ Property Location End ================================== -->
-
+		<!-- ============================ Property Type End ================================== -->
 
 		<!-- ============================ Latest Property For Sale Start ================================== -->
 		<section class="min">
@@ -427,7 +388,128 @@
 
 
 
+		<!-- ============================ Property Location ================================== -->
+		<section class="min">
+			<div class="container">
 
+				<div class="row justify-content-center">
+					<div class="col-lg-7 col-md-8">
+						<div class="sec-heading center">
+							<h2>Các điểm nóng bất động sản</h2>
+							<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+
+					<!-- Single Location -->
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a href="grid-layout-with-sidebar.html" class="img-wrap style-2">
+							<div class="location_wrap_content visible">
+								<div class="location_wrap_content_first">
+									<h4>New Orleans, Louisiana</h4>
+									<ul>
+										<li><span>12 Villas</span></li>
+										<li><span>10 Apartments</span></li>
+										<li><span>07 Offices</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="img-wrap-background" style="background-image: url(public/img/city-1.png);"></div>
+						</a>
+					</div>
+
+					<!-- Single Location -->
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a href="grid-layout-with-sidebar.html" class="img-wrap style-2">
+							<div class="location_wrap_content visible">
+								<div class="location_wrap_content_first">
+									<h4>Jerrsy, United State</h4>
+									<ul>
+										<li><span>12 Villas</span></li>
+										<li><span>10 Apartments</span></li>
+										<li><span>07 Offices</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="img-wrap-background" style="background-image: url(public/img/city-2.png);"></div>
+						</a>
+					</div>
+
+					<!-- Single Location -->
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a href="grid-layout-with-sidebar.html" class="img-wrap style-2">
+							<div class="location_wrap_content visible">
+								<div class="location_wrap_content_first">
+									<h4>Liverpool, London</h4>
+									<ul>
+										<li><span>12 Villas</span></li>
+										<li><span>10 Apartments</span></li>
+										<li><span>07 Offices</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="img-wrap-background" style="background-image: url(public/img/city-3.png);"></div>
+						</a>
+					</div>
+
+					<!-- Single Location -->
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a href="grid-layout-with-sidebar.html" class="img-wrap style-2">
+							<div class="location_wrap_content visible">
+								<div class="location_wrap_content_first">
+									<h4>NewYork, United States</h4>
+									<ul>
+										<li><span>12 Villas</span></li>
+										<li><span>10 Apartments</span></li>
+										<li><span>07 Offices</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="img-wrap-background" style="background-image: url(public/img/city-4.png);"></div>
+						</a>
+					</div>
+
+					<!-- Single Location -->
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a href="grid-layout-with-sidebar.html" class="img-wrap style-2">
+							<div class="location_wrap_content visible">
+								<div class="location_wrap_content_first">
+									<h4>Montreal, Canada</h4>
+									<ul>
+										<li><span>12 Villas</span></li>
+										<li><span>10 Apartments</span></li>
+										<li><span>07 Offices</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="img-wrap-background" style="background-image: url(public/img/city-5.png);"></div>
+						</a>
+					</div>
+
+					<!-- Single Location -->
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a href="grid-layout-with-sidebar.html" class="img-wrap style-2">
+							<div class="location_wrap_content visible">
+								<div class="location_wrap_content_first">
+									<h4>California, USA</h4>
+									<ul>
+										<li><span>12 Villas</span></li>
+										<li><span>10 Apartments</span></li>
+										<li><span>07 Offices</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="img-wrap-background" style="background-image: url(public/img/city-6.png);"></div>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- ============================ Property Location End ================================== -->
 
 		<!-- ============================ Price Table Start ================================== -->
 		<!-- <section class="min">
@@ -445,7 +527,7 @@
 				<div class="row align-items-center"> -->
 
 		<!-- Single Package -->
-		<!-- <div class="col-lg-3 col-md-3">
+		<!-- <div class="col-lg-4 col-md-4">
 						<div class="pricing_wrap">
 							<div class="prt_head">
 								<h4>Gói tiêu chuẩn</h4>
@@ -471,7 +553,7 @@
 					</div> -->
 
 		<!-- Single Package -->
-		<!-- <div class="col-lg-3 col-md-3">
+		<!-- <div class="col-lg-4 col-md-4">
 						<div class="pricing_wrap">
 							<div class="prt_head">
 								<div class="recommended">Gói tốt nhất</div>
@@ -498,7 +580,7 @@
 					</div> -->
 
 		<!-- Single Package -->
-		<!-- <div class="col-lg-3 col-md-3">
+		<!-- <div class="col-lg-4 col-md-4">
 						<div class="pricing_wrap">
 							<div class="prt_head">
 								<h4>Gói cao cấp</h4>

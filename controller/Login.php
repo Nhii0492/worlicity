@@ -38,10 +38,10 @@ class LoginController
         // Xử lý logic đăng ký
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $username = $_POST['username'];
-            $email = $_POST['email'];
+            $phone = $_POST['phone'];
             $password = $_POST['password'];
 
-            $result = $this->loginModel->register($username, $email, $password);
+            $result = $this->loginModel->register($username, $phone, $password);
 
             if ($result) {
                 // Đăng ký thành công, thực hiện các hành động sau khi đăng ký

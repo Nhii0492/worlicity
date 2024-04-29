@@ -108,7 +108,7 @@ require_once "model/Property.php";
 				<div class="nav-menus-wrapper" style="transition-property: none;">
 					<ul class="nav-menu">
 
-						<li><a href="index.php?controller=BdsSell&action=index">Bất Động Sản Bán<span class="submenu-indicator"></span></a>
+						<li><a href="index.php?controller=BdsSell&action=index">Phòng trọ, nhà trọ<span class="submenu-indicator"></span></a>
 							<ul class="nav-dropdown nav-submenu">
 								<li><a href="index.php?controller=BdsSell&action=index">Căn hộ chung cư<span class="submenu-indicator"></span></a>
 									<ul class="nav-dropdown nav-submenu">
@@ -267,7 +267,7 @@ require_once "model/Property.php";
 							</li>
 							<li class="add-listing">
 								<a href="#" class="theme-cl" data-toggle="modal" data-target="#login">
-									<i class="fas fa-plus-circle mr-1"></i>Đăng kí
+									<i class="fas fa-plus-circle mr-1"></i>Đăng tin
 								</a>
 							</li>
 						</ul>
@@ -391,7 +391,7 @@ require_once "model/Property.php";
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-12 col-md-12 text-center">
-						<p class="mb-0">© 2023 SANCITY. Designd and Powered By <a href="#">Sang Pham</a>.</p>
+						<p class="mb-0">© 2024 WORLICITY. Designd and Powered By <a href="#">Tu Quy Heo</a>.</p>
 					</div>
 				</div>
 			</div>
