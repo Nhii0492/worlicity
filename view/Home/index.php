@@ -43,120 +43,70 @@
 
 			<div class="container">
 
-				<div class="row justify-content-center">
-					<div class="col-xl-12 col-lg-12 col-md-12">
-						<h1 class="big-header-capt mb-0 text-light">WORLICITY</h1>
-						<p class="text-center mb-4 text-light">Tìm kiếm các phòng trọ, nhà trọ, căn hộ tại thành phố Đà Nẵng.</p>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-xl-12 col-lg-12 col-md-12">
-						<div class="simple_tab_search center">
-							<!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
-								<li class="nav-item">
-									<a class="nav-link active" id="rent-tab" data-toggle="tab" href="#rent" role="tab" aria-controls="rent" aria-selected="true">Buy</a>
-								</li>
-							</ul> -->
-
-							<div class="tab-content" id="myTabContent">
-
-								<form action="" method="GET">
-									<!-- Tab for Buy -->
-									<div class="tab-pane fade show active" id="rent" role="tabpanel" aria-labelledby="rent-tab">
-										<div class="full_search_box nexio_search lightanic_search hero_search-radius modern">
-											<div class="search_hero_wrapping">
-
-												<div class="row">
-
-													<div class="col-lg-3 col-sm-12 d-md-none d-lg-block">
-														<div class="form-group">
-															<label>Tìm nhanh</label>
-															<input type="text" name="keyword" class="form-control search_input b-0" placeholder="ex. Tên bất động sản" />
-														</div>
-													</div>
-
-													<div class="col-lg-3 col-md-3 col-sm-12">
-														<div class="form-group">
-															<label>Quận/Huyện</label>
-															<div class="input-with-icon">
-																<select id="location" name="city" class="form-control">
-																	<option value="">&nbsp;</option>
-																	<option value="Hà Nội">Hà Nội</option>
-																	<option value="Đà nẵng">Đà nẵng</option>
-																	<option value="Bình Dương">Bình Dương</option>
-																	<option value="TP. Hồ Chí Minh">Hồ Chí Minh</option>
-																	<option value="Cần Thơ">Cần Thơ</option>
-																</select>
-															</div>
-														</div>
-													</div>
-
-													<div class="col-lg-2 col-md-3 col-sm-12">
-														<div class="form-group">
-															<label>Loại bất động sản</label>
-															<div class="input-with-icon">
-																<select id="ptypes" name="propertyType" class="form-control">
-																	<option value="">&nbsp;</option>
-																	<?php while ($row = $propertyTypesResult->fetch(PDO::FETCH_ASSOC)) { ?>
-																		<option value="<?php echo $row['type_id']; ?>"><?php echo $row['type_name']; ?></option>
-																	<?php } ?>
-																</select>
-															</div>
-														</div>
-													</div>
-
-													<div class="col-lg-2 col-md-3 col-sm-12">
-														<div class="form-group none">
-															<a class="collapsed ad-search" data-toggle="collapse" data-parent="#search" data-target="#advance-search" href="javascript:void(0);" aria-expanded="false" aria-controls="advance-search"><i class="fa fa-sliders-h mr-2"></i>Tìm kiếm nâng cao</a>
-														</div>
-													</div>
-
-													<div class="col-lg-2 col-md-3 col-sm-12 small-padd">
-														<div class="form-group none">
-															<button class="btn search-btn" type="submit" value="submit">Tìm kiếm</button>
-
-														</div>
-													</div>
-												</div>
-
-												<!-- Collapse Advance Search Form -->
-												<div class="collapse" id="advance-search" aria-expanded="false" role="banner">
-
-
-
-
-													<!-- row -->
-													<div class="row">
-
-														<div class="col-lg-12 col-md-12 col-sm-12 mt-3">
-															<h4 class="text-dark">Tiện nghi & tính năng</h4>
-															<ul class="no-ul-list third-row">
-																<?php while ($row = $utilitiesResult->fetch(PDO::FETCH_ASSOC)) { ?>
-																	<li>
-																		<input id="utilities-<?php echo $row['utility_id']; ?>" class="checkbox-custom" name="utilities[]" type="checkbox" value="<?php echo $row['utility_id']; ?>">
-																		<label for="utilities-<?php echo $row['utility_id']; ?>" class="checkbox-custom-label"><?php echo $row['utility_name']; ?></label>
-																	</li>
-																<?php } ?>
-															</ul>
-														</div>
-
-													</div>
-													<!-- /row -->
-
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</form>
+						<div class="row justify-content-center">
+							<div class="col-xl-12 col-lg-12 col-md-12">
+								<h1 class="big-header-capt mb-0 text-light">WORLICITY</h1>
+								<p class="text-center mb-4 text-light">Tìm kiếm các phòng trọ, nhà trọ, căn hộ tại thành phố Đà Nẵng.</p>
 							</div>
-
 						</div>
 
+										
+						<div class="search" style=" display: flex;justify-content: space-around;align-items: center;">
+        					<div class="select-search" style="width: 900px;
+   										 height: 50px;
+   										 display: flex;
+   										 justify-content: space-evenly;
+   										 align-items: center;
+   										 background-color: rgba(255, 255, 255, 0.4);
+  										  margin-top: 20px;
+  										  border-radius: 10px;
+  										  ">
+        				    <select id="type" style="width: 150px;">
+        				        <option value="">Loại phòng</option>
+       					         <option value="Phòng trọ, nhà trọ">Phòng trọ, nhà trọ</option>
+       					         <option value="Cho thuê căn hộ">Cho thuê căn hộ</option>
+         					    <option value="Tìm người ở ghép">Tìm người ở ghép</option>
+           					 </select>
+							<select id="districtSelect" onchange="updateWards()" style="width: 150px;">
+								<option value="">Quận, huyện</option>
+								<option value="Hải Châu">Hải Châu</option>
+								<option value="Thanh Khê">Thanh Khê</option>
+								<option value="Sơn Trà">Sơn Trà</option>
+								<option value="Cẩm Lệ">Cẩm Lệ</option>
+								<option value="Liên Chiểu">Liên Chiểu</option>
+								<option value="Ngũ Hành Sơn">Ngũ Hành Sơn</option>
+								<option value="Hoà Vang">Hoà Vang</option>
+								<option value="Hoàng Sa">Hoàng Sa</option>
+							</select>
+							<select id="wardSelect" style="width: 150px;">
+								<option value="">Phường, xã</option>
+							</select>
+							<select id="prix" style="width: 150px;">
+								<option value="">Mức giá</option>
+								<option value="Thoả thuận">Thoả thuận</option>
+								<option value="Dưới 1 triệu">Dưới 1 triệu</option>
+								<option value="1 - 2 triệu">1 - 2 triệu</option>
+								<option value="2 - 3 triệu">2 - 3 triệu</option>
+								<option value="3 - 5 triệu">3 - 5 triệu</option>
+								<option value="5 - 7 triệu">5 - 7 triệu</option>
+								<option value="7 - 10 triệu">7 - 10 triệu</option>
+								<option value="10 - 15 triệu">10 - 15 triệu</option>
+								<option value="Trên 15 triệu">Trên 15 triệu</option>
+							</select>
+							<select id="zone" style="width: 150px;">
+								<option value="">Diện tích</option>
+								<option value="Dưới 20m2">Dưới 20m2</option>
+								<option value="Từ 20 - 30m2">Từ 20 - 30m2</option>
+								<option value="Từ 30 - 50m2">Từ 30 - 50m2</option>
+								<option value="Từ 50 - 70m2">Từ 50 - 70m2</option>
+								<option value="Từ 70 - 90m2">Từ 70 - 90m2</option>
+								<option value="Trên 90m2">Trên 90m2</option>
+							</select>
 
-					</div>
-				</div>
+							<img src="public/img/btn-search.svg" id="icon-search" style=" width: 20px;
+					height: 20px;">
+							</div>
+						</div>
 			</div>
 		</div>
 		<!-- ============================ Hero Banner End ================================== -->
@@ -420,7 +370,7 @@
 							<button id="load_more" name="load_more" value="Load more" onclick="load_ajax()" class="btn btn-theme-light-2 rounded">Xem thêm</button>
 						</div>
 					</div> -->
-
+					<script src="public/js/search.js"></script>
 			</div>
 		</section>
 		<!-- ============================ Latest Property For Sale End ================================== -->
@@ -526,6 +476,7 @@
 		<!-- </div>
 
 			</div>
+		
 		</section> -->
 		<!-- ============================ Price Table End ================================== -->
 
