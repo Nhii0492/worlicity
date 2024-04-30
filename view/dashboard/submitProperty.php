@@ -74,7 +74,7 @@ $loggedIn = $loginModel->isLoggedIn();
                 <div class="col-lg-12 col-md-12">
 
                     <div class="alert alert-info" role="alert">
-                        <p>Mọi thông tin chi tiết xin liên hệ CSKH - SANCITY <a href="#">Tại đây</a></p>
+                        <p>Mọi thông tin chi tiết xin liên hệ CSKH - Worlicity <a href="#">Tại đây</a></p>
                     </div>
 
                 </div>
@@ -87,27 +87,21 @@ $loggedIn = $loginModel->isLoggedIn();
 
                             <!-- Basic Information -->
                             <div class="frm_submit_block">
-                                <h3>Thông tin bất động sản</h3>
+                                <h3>Thông tin mô tả</h3>
                                 <div class="frm_submit_wrap">
                                     <div class="form-row">
                                         <div class="form-group col-md-12">
-                                            <label for="property_name">Tên bất động sản</label>
+                                            <label for="property_name">Tên phòng trọ</label>
                                             <input type="text" id="property_name" name="property_name" required class="form-control">
                                         </div>
-
+                                       
                                         <div class="form-group col-md-6">
-                                            <label for="status">Trang thái bất động sản</label>
-                                            <select id="status" name="status" required class="form-control">
-                                                <option value="">Chọn trạng thái</option>
-                                                <option value="Thuê">Thuê</option>
-                                                <option value="Bán">Bán</option>
-                                                <option value="Có sẵn">Có Sẵn</option>
-
-                                            </select>
+                                            <label for="age"  style="width: 200px">Năm hoàn thành (Tùy chọn)</label>
+                                            <input type="text" id="age" name="age" required class="form-control">
                                         </div>
 
                                         <div class="form-group col-md-6">
-                                            <label for="property_type">Loại Bất động sản</label>
+                                            <label for="property_type">Loại phòng</label>
                                             <!-- Load data -->
                                             <select id="property_type" name="property_type" required class="form-control">
                                                 <option value="">&nbsp;</option>
@@ -205,72 +199,17 @@ $loggedIn = $loginModel->isLoggedIn();
                                         </div>
 
                                         <div class="form-group col-md-6">
-                                            <label for="city">Thành phố</label>
-                                            <select id="city-input" name="city" required class="form-control">
+                                            <label for="district">Quận, huyện</label>
+                                            <select id="district-input" name="district" required class="form-control">
                                                 <option value="" selected disabled hidden>Tìm kiếm...</option>
-                                                <option value="Hà Nội">Hà Nội</option>
-                                                <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
-                                                <option value="Đà Nẵng">Đà Nẵng</option>
-                                                <option value="Hải Phòng">Hải Phòng</option>
-                                                <option value="Cần Thơ">Cần Thơ</option>
-                                                <option value="An Giang">An Giang</option>
-                                                <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
-                                                <option value="Bắc Giang">Bắc Giang</option>
-                                                <option value="Bắc Kạn">Bắc Kạn</option>
-                                                <option value="Bạc Liêu">Bạc Liêu</option>
-                                                <option value="Bắc Ninh">Bắc Ninh</option>
-                                                <option value="Bến Tre">Bến Tre</option>
-                                                <option value="Bình Định">Bình Định</option>
-                                                <option value="Bình Dương">Bình Dương</option>
-                                                <option value="Bình Phước">Bình Phước</option>
-                                                <option value="Bình Thuận">Bình Thuận</option>
-                                                <option value="Cà Mau">Cà Mau</option>
-                                                <option value="Cao Bằng">Cao Bằng</option>
-                                                <option value="Đắk Lắk">Đắk Lắk</option>
-                                                <option value="Đắk Nông">Đắk Nông</option>
-                                                <option value="Điện Biên">Điện Biên</option>
-                                                <option value="Đồng Nai">Đồng Nai</option>
-                                                <option value="Đồng Tháp">Đồng Tháp</option>
-                                                <option value="Gia Lai">Gia Lai</option>
-                                                <option value="Hà Giang">Hà Giang</option>
-                                                <option value="Hà Nam">Hà Nam</option>
-                                                <option value="Hà Tĩnh">Hà Tĩnh</option>
-                                                <option value="Hải Dương">Hải Dương</option>
-                                                <option value="Hậu Giang">Hậu Giang</option>
-                                                <option value="Hòa Bình">Hòa Bình</option>
-                                                <option value="Hưng Yên">Hưng Yên</option>
-                                                <option value="Khánh Hòa">Khánh Hòa</option>
-                                                <option value="Kiên Giang">Kiên Giang</option>
-                                                <option value="Kon Tum">Kon Tum</option>
-                                                <option value="Lai Châu">Lai Châu</option>
-                                                <option value="Lâm Đồng">Lâm Đồng</option>
-                                                <option value="Lạng Sơn">Lạng Sơn</option>
-                                                <option value="Lào Cai">Lào Cai</option>
-                                                <option value="Long An">Long An</option>
-                                                <option value="Nam Định">Nam Định</option>
-                                                <option value="Nghệ An">Nghệ An</option>
-                                                <option value="Ninh Bình">Ninh Bình</option>
-                                                <option value="Ninh Thuận">Ninh Thuận</option>
-                                                <option value="Phú Thọ">Phú Thọ</option>
-                                                <option value="Quảng Bình">Quảng Bình</option>
-                                                <option value="Quảng Nam">Quảng Nam</option>
-                                                <option value="Quảng Ngãi">Quảng Ngãi</option>
-                                                <option value="Quảng Ninh">Quảng Ninh</option>
-                                                <option value="Quảng Trị">Quảng Trị</option>
-                                                <option value="Sóc Trăng">Sóc Trăng</option>
-                                                <option value="Sơn La">Sơn La</option>
-                                                <option value="Tây Ninh">Tây Ninh</option>
-                                                <option value="Thái Bình">Thái Bình</option>
-                                                <option value="Thái Nguyên">Thái Nguyên</option>
-                                                <option value="Thanh Hóa">Thanh Hóa</option>
-                                                <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
-                                                <option value="Tiền Giang">Tiền Giang</option>
-                                                <option value="Trà Vinh">Trà Vinh</option>
-                                                <option value="Tuyên Quang">Tuyên Quang</option>
-                                                <option value="Vĩnh Long">Vĩnh Long</option>
-                                                <option value="Vĩnh Phúc">Vĩnh Phúc</option>
-                                                <option value="Yên Bái">Yên Bái</option>
-                                                <!-- Thêm các tùy chọn cho các thành phố khác tại đây -->
+                                                <option value="Thanh Khê">Thanh Khê</option>
+                                                <option value="Hải Châu">Hải Châu</option>
+                                                <option value="Liên Chiểu">Liên Chiểu</option>
+                                                <option value="Cẩm Lệ">Cẩm Lệ</option>
+                                                <option value="Sơn Trà">Sơn Trà</option>
+                                                <option value="Ngũ Hành Sơn">Ngũ Hành Sơn</option>
+                                                <option value="Hoà Vang">Hoà Vang</option>
+                                                <option value="Hoàng Sa">Hoàng Sa</option>
                                             </select>
                                         </div>
 
@@ -280,7 +219,7 @@ $loggedIn = $loginModel->isLoggedIn();
 
                             <!-- Detailed Information -->
                             <div class="frm_submit_block">
-                                <h3>Chi tiết bất động sản</h3>
+                                <h3>Chi tiết</h3>
                                 <div class="frm_submit_wrap">
                                     <div class="form-row">
 
@@ -288,12 +227,6 @@ $loggedIn = $loginModel->isLoggedIn();
                                             <label for="description">Mô tả</label>
                                             <textarea id="description" name="description" class="form-control h-120"></textarea>
                                         </div>
-
-                                        <div class="form-group col-md-4">
-                                            <label for="age">Năm hoàn thành (Tùy chọn)</label>
-                                            <input type="text" id="age" name="age" required class="form-control">
-                                        </div>
-
 
 
                                         <div class="form-group col-md-12">

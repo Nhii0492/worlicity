@@ -23,11 +23,6 @@
             <div class="col-lg-9 col-md-8">
                 <div class="dashboard-body">
 
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <h4>Gói hiện tại: <span class="pc-title theme-cl">Free Package</span></h4>
-                        </div>
-                    </div>
 
                     <div class="row">
 

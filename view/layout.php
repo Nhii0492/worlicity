@@ -110,100 +110,58 @@ require_once "model/Property.php";
 
 						<li><a href="index.php?controller=BdsSell&action=index">Phòng trọ, nhà trọ<span class="submenu-indicator"></span></a>
 							<ul class="nav-dropdown nav-submenu">
-								<li><a href="index.php?controller=BdsSell&action=index">Căn hộ chung cư<span class="submenu-indicator"></span></a>
-									<ul class="nav-dropdown nav-submenu">
-										<li><a href="index.php?controller=BdsSell&action=index">Hà Nội</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Hồ Chí Minh</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Đà Nẵng</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Cần Thơ</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Tỉnh Thành Khác</a></li>
-									</ul>
-								</li>
-								<li><a href="index.php?controller=BdsSell&action=index">Nhà Đất<span class="submenu-indicator"></span></a>
-									<ul class="nav-dropdown nav-submenu">
-										<li><a href="index.php?controller=BdsSell&action=index">Hà Nội</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Hồ Chí Minh</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Đà Nẵng</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Cần Thơ</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Tỉnh Thành Khác</a></li>
-									</ul>
-								</li>
-								<li><a href="index.php?controller=BdsSell&action=index">Vinhomes<span class="submenu-indicator"></span></a>
-									<ul class="nav-dropdown nav-submenu">
-										<li><a href="index.php?controller=BdsSell&action=index">Hà Nội</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Hồ Chí Minh</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Đà Nẵng</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Cần Thơ</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Tỉnh Thành Khác</a></li>
-									</ul>
-								</li>
-								<li><a href="index.php?controller=BdsSell&action=index">Biệt thự<span class="submenu-indicator"></span></a>
-									<ul class="nav-dropdown nav-submenu">
-										<li><a href="index.php?controller=BdsSell&action=index">Agent Grid Style</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Agent Grid 2</a></li>
-										<li><a href="index.php?controller=BdsSell&action=index">Agent Detail Page</a></li>
-									</ul>
-								</li>
+								<li><a href="index.php?controller=BdsSell&action=index">Thanh Khê<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Hải Châu<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Liên Chiểu<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Cẩm Lệ<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Sơn Trà<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Ngũ Hành Sơn<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Hoà Vang<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Hoàng Sa<span class="submenu-indicator"></span></a></li>
 							</ul>
 						</li>
 
-						<li><a href="index.php?controller=BdsRent&action=index">Bất Động Sản Cho Thuê<span class="submenu-indicator"></span></a>
+						<li><a href="index.php?controller=BdsRent&action=index">Nhà nguyên căn<span class="submenu-indicator"></span></a>
 							<ul class="nav-dropdown nav-submenu">
-								<li><a href="index.php?controller=BdsRent&action=index">Căn hộ chung cư<span class="submenu-indicator"></span></a>
-									<ul class="nav-dropdown nav-submenu">
-										<li><a href="index.php?controller=BdsRent&action=index">Hà Nội</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Hồ Chí Minh</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Đà Nẵng</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Cần Thơ</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Tỉnh Thành Khác</a></li>
-									</ul>
-								</li>
-								<li><a href="index.php?controller=BdsRent&action=index">Nhà Đất<span class="submenu-indicator"></span></a>
-									<ul class="nav-dropdown nav-submenu">
-										<li><a href="index.php?controller=BdsRent&action=index">Hà Nội</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Hồ Chí Minh</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Đà Nẵng</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Cần Thơ</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Tỉnh Thành Khác</a></li>
-									</ul>
-								</li>
-								<li><a href="index.php?controller=BdsRent&action=index">Vinhomes<span class="submenu-indicator"></span></a>
-									<ul class="nav-dropdown nav-submenu">
-										<li><a href="index.php?controller=BdsRent&action=index">Hà Nội</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Hồ Chí Minh</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Đà Nẵng</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Cần Thơ</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Tỉnh Thành Khác</a></li>
-									</ul>
-								</li>
-								<li><a href="index.php?controller=BdsRent&action=index">Biệt thự<span class="submenu-indicator"></span></a>
-									<ul class="nav-dropdown nav-submenu">
-										<li><a href="index.php?controller=BdsRent&action=index">Agent Grid Style</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Agent Grid 2</a></li>
-										<li><a href="index.php?controller=BdsRent&action=index">Agent Detail Page</a></li>
-									</ul>
-								</li>
+								<li><a href="index.php?controller=BdsSell&action=index">Thanh Khê<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Hải Châu<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Liên Chiểu<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Cẩm Lệ<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Sơn Trà<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Ngũ Hành Sơn<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Hoà Vang<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Hoàng Sa<span class="submenu-indicator"></span></a></li>
 							</ul>
 						</li>
 
-						<li><a href="index.php?controller=Project&action=index">Dự án<span class="submenu-indicator"></span></a>
+						<li><a href="index.php?controller=Project&action=index">Căn hộ cho thuê<span class="submenu-indicator"></span></a>
 							<ul class="nav-dropdown nav-submenu">
-								<li><a href="index.php?controller=Project&action=index">Căn hộ chung cư</a></li>
-								<li><a href="index.php?controller=Project&action=index">Cao ốc văn phòng</a></li>
-								<li><a href="index.php?controller=Project&action=index">Trung tâm thương mại</a></li>
-								<li><a href="index.php?controller=Project&action=index">Khu đô thị mới</a></li>
-								<li><a href="index.php?controller=Project&action=index">Khu nghỉ dưỡng, sinh thái</a></li>
-								<li><a href="index.php?controller=Project&action=index">Dự án khác</a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Thanh Khê<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Hải Châu<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Liên Chiểu<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Cẩm Lệ<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Sơn Trà<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Ngũ Hành Sơn<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Hoà Vang<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Hoàng Sa<span class="submenu-indicator"></span></a></li>
+							</ul>
+						</li>
 
-
+						<li><a href="index.php?controller=Project&action=index">Tìm người ở ghép<span class="submenu-indicator"></span></a>
+							<ul class="nav-dropdown nav-submenu">
+								<li><a href="index.php?controller=BdsSell&action=index">Thanh Khê<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Hải Châu<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Liên Chiểu<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Cẩm Lệ<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Sơn Trà<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Ngũ Hành Sơn<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Hoà Vang<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=BdsSell&action=index">Hoàng Sa<span class="submenu-indicator"></span></a></li>
 							</ul>
 						</li>
 
 						<li><a href="index.php?controller=Blog&action=index">Tin tức<span class="submenu-indicator"></span></a>
 							<ul class="nav-dropdown nav-submenu">
-								<li><a href="index.php?controller=Blog&action=index">Bất động sản Hà Nội</a></li>
-								<li><a href="index.php?controller=Blog&action=index">Bất động sản TP.HCM</a></li>
-								<li><a href="index.php?controller=Blog&action=index">Blog Bất Động Sản</a></li>
 								<li><a href="index.php?controller=Blog&action=index">Báo cáo thị trường</a></li>
 								<li><a href="index.php?controller=Blog&action=index">Quy hoạch - Pháp lý</a></li>
 								<li><a href="index.php?controller=Blog&action=index">Tài chính</a></li>
@@ -212,13 +170,6 @@ require_once "model/Property.php";
 							</ul>
 						</li>
 
-						<li><a href="index.php?controller=Agency&action=index">Môi Giới<span class="submenu-indicator"></span></a>
-							<ul class="nav-dropdown nav-submenu">
-								<li><a href="index.php?controller=Agency&action=index">Doanh nghiệp</a></li>
-								<li><a href="index.php?controller=Agency&action=index">Cá nhân</a></li>
-
-							</ul>
-						</li>
 					</ul>
 					<!-- ==============================  View Signing  ================================ -->
 					<?php
@@ -243,8 +194,6 @@ require_once "model/Property.php";
 											<li><a href="index.php?controller=DashBoard&action=profile"><i class="fa fa-user-tie"></i>Hồ sơ cá nhân</a></li>
 											<li><a href="index.php?controller=DashBoard&action=saveProperty"><i class="fa fa-bookmark"></i>Tin cá nhân<span class="notti_coun style-2">7</span></a></li>
 											<li><a href="index.php?controller=DashBoard&action=myProperty"><i class="fa fa-tasks"></i>Nhà của bạn</a></li>
-											<li><a href="index.php?controller=DashBoard&action=messages"><i class="fa fa-envelope"></i>Tin nhắn<span class="notti_coun style-3">3</span></a></li>
-											<li><a href="index.php?controller=DashBoard&action=package"><i class="fa fa-gift"></i>Đăng kí gói</a></li>
 											<li><a href="index.php?controller=DashBoard&action=newProperty"><i class="fa fa-pen-nib"></i>Tạo bài viết</a></li>
 											<li><a href="index.php?controller=DashBoard&action=changePassword"><i class="fa fa-unlock-alt"></i>Đổi mật khẩu</a></li>
 											<li><a href="index.php?controller=Logout&action=index"><i class="fa fa-power-off"></i>Thoát</a></li>
@@ -323,13 +272,13 @@ require_once "model/Property.php";
 					<div class="col-lg-5 col-md-5">
 						<div class="footer_widget">
 							<img src="public/img/logo-light.png" class="img-footer small mb-2" alt="" />
-							<h4 class="extream mb-3">Do you need help with<br>anything?</h4>
-							<p>Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month</p>
+							<h4 class="extream mb-3">Bạn cần trợ giúp ?</h4>
+							<p>Nhận thông tin cập nhật, ưu đãi hấp dẫn, hướng dẫn, giảm giá được gửi thẳng vào hộp thư của bạn hàng tháng</p>
 							<div class="foot-news-last">
 								<div class="input-group">
-									<input type="text" class="form-control" placeholder="Email Address">
+									<input type="text" class="form-control" placeholder="Địa chỉ Email">
 									<div class="input-group-append">
-										<button type="button" class="input-group-text theme-bg b-0 text-light">Subscribe</button>
+										<button type="button" class="input-group-text theme-bg b-0 text-light">Đăng ký</button>
 									</div>
 								</div>
 							</div>
@@ -369,14 +318,16 @@ require_once "model/Property.php";
 
 							<div class="col-lg-3 col-md-4">
 								<div class="footer_widget">
-									<h4 class="widget_title">Khu vưc</h4>
+									<h4 class="widget_title">Khu vực</h4>
 									<ul class="footer-menu">
-										<li><a href="#">Hồ Chí Minh</a></li>
-										<li><a href="#">Nha Trang</a></li>
-										<li><a href="#">Vũng Tàu</a></li>
-										<li><a href="#">Hà Nội</a></li>
-										<li><a href="#">Cần Thơ</a></li>
-										<li><a href="#">Vĩnh Long<span class="update">Up</span></a></li>
+										<li><a href="#">Thanh Khê</a></li>
+										<li><a href="#">Hải Châu</a></li>
+										<li><a href="#">Liên Chiểu</a></li>
+										<li><a href="#">Cẩm Lệ</a></li>
+										<li><a href="#">Sơn Trà</a></li>
+										<li style="width:150px"><a href="#">Ngũ Hành Sơn <span class="update">Up</span></a></li>
+										<li><a href="#">Hoà Vang</a></li>
+										<li><a href="#">Hoàng Sa</a></li>
 									</ul>
 								</div>
 							</div>

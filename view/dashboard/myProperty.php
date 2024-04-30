@@ -55,7 +55,7 @@
                                     <table class="table">
                                         <thead class="thead-dark">
                                             <tr>
-                                                <th scope="col">Bất động sản</th>
+                                                <th scope="col">Tiêu đề</th>
                                                 <th scope="col" class="m2_hide">TG đăng</th>
                                                 <th scope="col" class="m2_hide">Stats</th>
                                                 <th scope="col" class="m2_hide">Posted On</th>
@@ -135,7 +135,7 @@
                                                 </td>
                                                 <td class="m2_hide">
                                                     <div class="_leads_posted"><h5><?php echo date('d M - H:i', strtotime($property['created_at'])); ?></h5></div>
-                                                    <div class="_leads_view_title"><span>Sancity</span></div>
+                                                    <div class="_leads_view_title"><span>Worlicity</span></div>
                                                 </td>
                                                 <td>
                                                     <div class="_leads_status"><span class="<?php echo ($property['status'] === 'Thuê') ? 'expire' : (($property['status'] === 'Bán') ? 'active' : ''); ?>">

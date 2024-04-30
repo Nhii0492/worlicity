@@ -3770,7 +3770,7 @@ ul {
 }
 
 .navigation {
-	width: 100%;
+	width: 1200px;
 	height: 70px;
 	display: table;
 	position: relative;
@@ -5996,6 +5996,7 @@ h1.italian-header-capt {
 }
 h1.big-header-capt {
 	font-weight: 700;
+	font-size: 100px;
 	margin: 0 auto;
 	margin-bottom: 0.4em;
 	text-align: center;
@@ -13341,7 +13342,6 @@ ul.packages-lists-list li {
 	font-weight: 500;
 	position: relative;
 	transition: all ease 0.4s;
-	font-family: "Jost", sans-serif;
 }
 .dash_user_menues ul li a:hover,
 .dash_user_menues ul li a:focus {
@@ -15939,4 +15939,5 @@ input.form-control.tbl_quan {
 		width: 20px;
 		border-radius: 50%;
 	}
+
 }

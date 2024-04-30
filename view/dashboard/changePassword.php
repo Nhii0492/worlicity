@@ -34,12 +34,12 @@
                                         <input type="password" class="form-control" name="oldPassword">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>Mật khẩu mới</label>
+                                        <label>Mật khẩu mới </label>
                                         <input type="password" class="form-control" name="newPassword">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>Nhập lại mật khẩu mới</label>
-                                        <<input type="password" class="form-control" name="confirmPassword">
+                                        <label>Nhập lại mật khẩu mới </label>
+                                        <input type="password" class="form-control" name="confirmPassword">
                                     </div>
                                     <div class="form-group col-lg-12 col-md-12">
                                         <button id="btnSaveChanges" class="btn btn-theme" type="submit">Lưu thay đổi</button>
