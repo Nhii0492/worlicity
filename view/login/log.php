@@ -5,16 +5,16 @@
         <div class="modal-content overli" id="registermodal">
             <div class="modal-body p-0">
                 <div class="resp_log_wrap">
-                    <div class="resp_log_thumb" style="background:url(public/img/loginbanner.png)no-repeat;"></div>
+                    <div class="resp_log_thumb" style="background:url(public/img/banner-login.png)no-repeat;"></div>
                     <div class="resp_log_caption">
                         <span class="mod-close" data-dismiss="modal" aria-hidden="true"><i class="ti-close"></i></span>
                         <div class="edlio_152">
                             <ul class="nav nav-pills tabs_system center" id="pills-tab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true"><i class="fas fa-sign-in-alt mr-2"></i>Login</a>
+                                    <a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true"><i class="fas fa-sign-in-alt mr-2"></i>Đăng nhập</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="pills-signup-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-signup" aria-selected="false"><i class="fas fa-user-plus mr-2"></i>Register</a>
+                                    <a class="nav-link" id="pills-signup-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-signup" aria-selected="false"><i class="fas fa-user-plus mr-2"></i>Đăng kí</a>
                                 </li>
                             </ul>
                         </div>
