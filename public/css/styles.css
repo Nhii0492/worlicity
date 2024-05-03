@@ -5223,6 +5223,7 @@ li.login-attri .account-drop a {
 }
 .btn.search-btn {
 	background: #00966a;
+	margin-top: 10px; /* sửa button tìm kiếm */
 	padding: 10px 15px;
 	border-radius: 5px;
 	box-shadow: 0 5px 24px rgba(31, 37, 59, 0.15);
@@ -6001,6 +6002,11 @@ h1.big-header-capt {
 	margin-bottom: 0.4em;
 	text-align: center;
 	text-transform: capitalize;
+}
+h3.big-header-capt {
+	font-weight: 700;
+	font-size: 15px;
+	text-align: center;
 }
 .lightanic_search .input-with-icon .form-control,
 .lightanic_search .input-with-shadow .form-control,
@@ -15939,5 +15945,4 @@ input.form-control.tbl_quan {
 		width: 20px;
 		border-radius: 50%;
 	}
-
 }

@@ -1,9 +1,5 @@
 const wardsByDistrict = {
 	"Hải Châu": [
-		"An Hải Bắc",
-		"An Hải Đông",
-		"An Hải Tây",
-		"An Khê",
 		"Bình Hiên",
 		"Bình Thuận",
 		"Hòa Cường Bắc",

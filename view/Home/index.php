@@ -46,72 +46,79 @@
 				<div class="row justify-content-center">
 					<div class="col-xl-12 col-lg-12 col-md-12">
 						<h1 class="big-header-capt mb-0 text-light">WORLICITY</h1>
-						<p class="text-center mb-4 text-light">Tìm kiếm các phòng trọ, nhà trọ, căn hộ tại thành phố Đà Nẵng.</p>
+						<h3 class="big-header-capt mb-3 text-light">TÌM KIẾM CÁC PHÒNG TRỌ, NHÀ TRỌ, NHÀ NGUYÊN CĂN, CĂN HỘ CHO THUÊ TẠI THÀNH PHỐ ĐÀ NẴNG</h3>
+						<!-- <p class="text-center mb-0 text-light">Tìm kiếm các phòng trọ, nhà trọ, căn hộ tại thành phố Đà Nẵng.</p> -->
 					</div>
 				</div>
 
-										
-						<div class="search" style=" display: flex;justify-content: space-around;align-items: center;">
-        					<div class="select-search" style="width: 900px;
-   										 height: 70px;
-   										 display: flex;
-   										 justify-content: space-evenly;
-   										 align-items: center;
-   										 background-color: #fff;
-  										  margin-top: 20px;
-										  border-radius:5px;
-  										  ">
 
-        				    <select id="type" style="width:150px; height:50px; border:0">
-        				        <option value="">Loại phòng</option>
-       					         <option value="Phòng trọ, nhà trọ">Phòng trọ, nhà trọ</option>
-       					         <option value="Cho thuê căn hộ">Cho thuê căn hộ</option>
-         					    <option value="Tìm người ở ghép">Tìm người ở ghép</option>
-           					 </select>
-							 <div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
-							<select id="districtSelect" onchange="updateWards()" style="width:150px; height:50px; border:0">
-								<option value="">Quận, huyện</option>
-								<option value="Hải Châu">Hải Châu</option>
-								<option value="Thanh Khê">Thanh Khê</option>
-								<option value="Sơn Trà">Sơn Trà</option>
-								<option value="Cẩm Lệ">Cẩm Lệ</option>
-								<option value="Liên Chiểu">Liên Chiểu</option>
-								<option value="Ngũ Hành Sơn">Ngũ Hành Sơn</option>
-								<option value="Hoà Vang">Hoà Vang</option>
-								<option value="Hoàng Sa">Hoàng Sa</option>
-							</select>
-							<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
-							<select id="wardSelect" style="width:150px; height:50px; border:0">
-								<option value="">Phường, xã</option>
-							</select>
-							<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
-							<select id="prix" style="width:150px; height:50px; border:0">
-								<option value="">Mức giá</option>
-								<option value="Thoả thuận">Thoả thuận</option>
-								<option value="Dưới 1 triệu">Dưới 1 triệu</option>
-								<option value="1 - 2 triệu">1 - 2 triệu</option>
-								<option value="2 - 3 triệu">2 - 3 triệu</option>
-								<option value="3 - 5 triệu">3 - 5 triệu</option>
-								<option value="5 - 7 triệu">5 - 7 triệu</option>
-								<option value="7 - 10 triệu">7 - 10 triệu</option>
-								<option value="10 - 15 triệu">10 - 15 triệu</option>
-								<option value="Trên 15 triệu">Trên 15 triệu</option>
-							</select>
-							<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
-							<select id="zone" style="width:150px; height:50px; border:0">
-								<option value="">Diện tích</option>
-								<option value="Dưới 20m2">Dưới 20m2</option>
-								<option value="Từ 20 - 30m2">Từ 20 - 30m2</option>
-								<option value="Từ 30 - 50m2">Từ 30 - 50m2</option>
-								<option value="Từ 50 - 70m2">Từ 50 - 70m2</option>
-								<option value="Từ 70 - 90m2">Từ 70 - 90m2</option>
-								<option value="Trên 90m2">Trên 90m2</option>
-							</select>
-							<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
-							<button type="button" style="display:flex;height:40px;align-items: center; border-radius: 10px; border:0; background-color: #D5EDDA;"><img src="public/img/btn-search.svg" id="icon-search" style=" width: 20px;
-					height: 20px;">Search</button>
+				<div class="search" style=" display: flex;justify-content: space-around;align-items: center;">
+					<div class="select-search" style="width: 900px;
+   										height: 70px;
+   										display: flex;
+   										justify-content: space-evenly;
+   										align-items: center;
+   										background-color: #fff;
+  										margin-top: 20px;
+										border-radius:5px;
+  										">
+
+						<select id="type" style="width:150px; height:50px; border:0; padding-left: 5px">
+							<option value="">Loại phòng</option>
+							<option value="Phòng trọ, nhà trọ">Phòng trọ, nhà trọ</option>
+							<option value="Nhà nguyên căn">Nhà nguyên căn</option>
+							<option value="Cho thuê căn hộ">Cho thuê căn hộ</option>
+							<option value="Tìm người ở ghép">Tìm người ở ghép</option>
+						</select>
+						<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+						<select id="districtSelect" onchange="updateWards()" style="width:150px; height:50px; border:0">
+							<option value="">Quận, huyện</option>
+							<option value="Hải Châu">Hải Châu</option>
+							<option value="Thanh Khê">Thanh Khê</option>
+							<option value="Sơn Trà">Sơn Trà</option>
+							<option value="Cẩm Lệ">Cẩm Lệ</option>
+							<option value="Liên Chiểu">Liên Chiểu</option>
+							<option value="Ngũ Hành Sơn">Ngũ Hành Sơn</option>
+							<option value="Hoà Vang">Hoà Vang</option>
+							<option value="Hoàng Sa">Hoàng Sa</option>
+						</select>
+						<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+						<select id="wardSelect" style="width:150px; height:50px; border:0">
+							<option value="">Phường, xã</option>
+						</select>
+						<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+						<select id="prix" style="width:150px; height:50px; border:0">
+							<option value="">Mức giá</option>
+							<option value="Thoả thuận">Thoả thuận</option>
+							<option value="Dưới 1 triệu">Dưới 1 triệu</option>
+							<option value="1 - 2 triệu">1 - 2 triệu</option>
+							<option value="2 - 3 triệu">2 - 3 triệu</option>
+							<option value="3 - 5 triệu">3 - 5 triệu</option>
+							<option value="5 - 7 triệu">5 - 7 triệu</option>
+							<option value="7 - 10 triệu">7 - 10 triệu</option>
+							<option value="10 - 15 triệu">10 - 15 triệu</option>
+							<option value="Trên 15 triệu">Trên 15 triệu</option>
+						</select>
+						<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+						<select id="zone" style="width:150px; height:50px; border:0">
+							<option value="">Diện tích</option>
+							<option value="Dưới 20m2">Dưới 20m2</option>
+							<option value="Từ 20 - 30m2">Từ 20 - 30m2</option>
+							<option value="Từ 30 - 50m2">Từ 30 - 50m2</option>
+							<option value="Từ 50 - 70m2">Từ 50 - 70m2</option>
+							<option value="Từ 70 - 90m2">Từ 70 - 90m2</option>
+							<option value="Trên 90m2">Trên 90m2</option>
+						</select>
+						<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+						<!-- <button type="button" style="display:flex; height:35px; align-items: center; border-radius: 10px; border:0; background-color: #00966a; color: #fff;">Tìm kiếm</button> -->
+						<!-- <img src="public/img/btn-search.svg" id="icon-search" style=" width: 20px; height: 20px;">-->
+						<div class="col-lg-2 col-md-3 col-sm-12 small-padd">
+							<div class="form-group none">
+								<button class="btn search-btn" type="submit" value="submit"><i class="fa fa-search-location"></i> Tìm kiếm</button>
 							</div>
 						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>
@@ -212,7 +219,7 @@
 								</div>
 							</div>
 							<div class="img-wrap-background" style="background-image: url(public/img/LienChieu.jpg);"></div>
-							
+
 						</a>
 					</div>
 
