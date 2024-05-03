@@ -65,8 +65,6 @@ class ModelHome extends Mastermodel
         return $result;
     }
 
-
-
     public function getLimitedProperties($keyword, $district, $propertyType, $utilities, $offset, $limit)
     {
         $query = "SELECT p.property_id, p.property_name, p.price, p.district, pt.property_type
@@ -109,9 +107,7 @@ class ModelHome extends Mastermodel
         return $result;
     }
 
-
-
-    public function sellProperties($keyword, $district, $propertyType, $price, $bedroom, $bathroom, $minArea, $maxArea, $utilities)
+    public function rentRoomProperties($keyword, $district, $propertyType, $price, $bedroom, $bathroom, $minArea, $maxArea, $utilities)
     {
         $query = "SELECT DISTINCT p.*, pt.type_name, bd.bedroom_count, ba.bathroom_count, l.district, pi.image_url, p.view_count
             FROM properties p
@@ -127,107 +123,7 @@ class ModelHome extends Mastermodel
                 FROM property_images
                 GROUP BY property_id
             ) pi ON p.property_id = pi.property_id
-            WHERE p.status = 'Bán'";
-
-        $conditions = array();
-        $params = array();
-
-        if (!empty($keyword)) {
-            $conditions[] = "p.property_name LIKE ?";
-            $params[] = "%$keyword%";
-        }
-
-        if (!empty($district)) {
-            $conditions[] = "l.district = ?";
-            $params[] = $district;
-        }
-
-        if (!empty($propertyType)) {
-            $conditions[] = "p.type_id = ?";
-            $params[] = $propertyType;
-        }
-
-        if (!empty($price)) {
-            switch ($price) {
-                case '500000000':
-                    $conditions[] = "p.price < 500000000";
-                    break;
-                case '1000000000':
-                    $conditions[] = "p.price BETWEEN 500000000 AND 1000000000";
-                    break;
-                case '2000000000':
-                    $conditions[] = "p.price BETWEEN 1000000000 AND 2000000000";
-                    break;
-                case '5000000000':
-                    $conditions[] = "p.price BETWEEN 2000000000 AND 5000000000";
-                    break;
-                case '5000000001':
-                    $conditions[] = "p.price > 5000000000";
-                    break;
-            }
-        }
-
-        if (!empty($bedroom)) {
-            $conditions[] = "bd.bedroom_count = ?";
-            $params[] = $bedroom;
-        }
-
-        if (!empty($bathroom)) {
-            $conditions[] = "ba.bathroom_count = ?";
-            $params[] = $bathroom;
-        }
-
-        if (!empty($minArea) || !empty($maxArea)) {
-            if (empty($minArea)) {
-                $minArea = 0;
-            }
-            if (empty($maxArea)) {
-                $maxArea = 9999999999;
-            }
-            $conditions[] = "p.real_area BETWEEN ? AND ?";
-            $params[] = $minArea;
-            $params[] = $maxArea;
-        }
-
-        if (!empty($utilities)) {
-            $utilitiesConditions = array();
-            foreach ($utilities as $utility) {
-                $utilitiesConditions[] = "pu.utility_id = ?";
-                $params[] = $utility;
-            }
-            $utilitiesConditionsStr = implode(" OR ", $utilitiesConditions);
-            $conditions[] = "($utilitiesConditionsStr)";
-        }
-
-        if (!empty($conditions)) {
-            $conditionsStr = implode(" AND ", $conditions);
-            $query .= " AND $conditionsStr";
-        }
-
-        $query .= " ORDER BY p.created_at DESC";
-
-        $result = $this->db->getList($query, $params);
-        return $result;
-    }
-
-
-    public function rentProperties($keyword, $district, $propertyType, $price, $bedroom, $bathroom, $minArea, $maxArea, $utilities)
-    {
-        $query = "SELECT DISTINCT p.*, pt.type_name, bd.bedroom_count, ba.bathroom_count, l.district, pi.image_url, p.view_count
-            FROM properties p
-            INNER JOIN property_types pt ON p.type_id = pt.type_id
-            INNER JOIN property_details pd ON p.property_id = pd.property_id
-            INNER JOIN bedrooms bd ON pd.bedroom_id = bd.bedroom_id
-            INNER JOIN bathrooms ba ON pd.bathroom_id = ba.bathroom_id
-            LEFT JOIN locations l ON p.property_id = l.property_id
-            LEFT JOIN property_utilities pu ON p.property_id = pu.property_id
-            LEFT JOIN utilities u ON pu.utility_id = u.utility_id
-            LEFT JOIN (
-                SELECT property_id, MIN(image_url) AS image_url
-                FROM property_images
-                GROUP BY property_id
-            ) pi ON p.property_id = pi.property_id
-            WHERE p.status = 'Thuê'";
+            WHERE p.type_id = 1";
 
         $conditions = array();
         $params = array();

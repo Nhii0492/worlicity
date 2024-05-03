@@ -29,7 +29,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="dashboard_stats_wrap widget-1">
                                 <div class="dashboard_stats_wrap_content">
-                                    <h4><?php echo $propertyCount; ?></h4> <span>Tổng bất động sản</span>
+                                    <h4><?php echo $propertyCount; ?></h4> <span>Tổng số tin đã đăng</span>
                                 </div>
                                 <div class="dashboard_stats_wrap-icon"><i class="ti-location-pin"></i></div>
                             </div>
@@ -72,7 +72,7 @@
                                         <table class="table table-lg table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th>Tên bất động sản của bạn</th>
+                                                    <th>Tên tin của bạn</th>
                                                     <th>ID</th>
                                                     <th>Trạng thái</th>
                                                     <th>Giá</th>

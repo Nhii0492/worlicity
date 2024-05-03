@@ -43,12 +43,12 @@
 
 			<div class="container">
 
-						<div class="row justify-content-center">
-							<div class="col-xl-12 col-lg-12 col-md-12">
-								<h1 class="big-header-capt mb-0 text-light">WORLICITY</h1>
-								<p class="text-center mb-4 text-light">Tìm kiếm các phòng trọ, nhà trọ, căn hộ tại thành phố Đà Nẵng.</p>
-							</div>
-						</div>
+				<div class="row justify-content-center">
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<h1 class="big-header-capt mb-0 text-light">WORLICITY</h1>
+						<p class="text-center mb-4 text-light">Tìm kiếm các phòng trọ, nhà trọ, căn hộ tại thành phố Đà Nẵng.</p>
+					</div>
+				</div>
 
 										
 						<div class="search" style=" display: flex;justify-content: space-around;align-items: center;">
@@ -61,6 +61,7 @@
   										  margin-top: 20px;
 										  border-radius:5px;
   										  ">
+
         				    <select id="type" style="width:150px; height:50px; border:0">
         				        <option value="">Loại phòng</option>
        					         <option value="Phòng trọ, nhà trọ">Phòng trọ, nhà trọ</option>
@@ -111,6 +112,7 @@
 					height: 20px;">Search</button>
 							</div>
 						</div>
+
 			</div>
 		</div>
 		<!-- ============================ Hero Banner End ================================== -->
@@ -134,6 +136,7 @@
 									</ul> -->
 								</div>
 							</div>
+
 							<div class="img-wrap-background" style="background-image: url(public/img/HaiChau.jpg);"></div>
 						</a>
 					</div>
@@ -151,7 +154,9 @@
 									</ul> -->
 								</div>
 							</div>
+
 							<div class="img-wrap-background" style="background-image: url(public/img/ThanhKhe.jpg);"></div>
+
 						</a>
 					</div>
 
@@ -169,6 +174,7 @@
 								</div>
 							</div>
 							<div class="img-wrap-background" style="background-image: url(public/img/SonTra.jpg);"></div>
+
 						</a>
 					</div>
 
@@ -185,7 +191,9 @@
 									</ul> -->
 								</div>
 							</div>
+
 							<div class="img-wrap-background" style="background-image: url(public/img/NguHanhSon.jpg);"></div>
+
 						</a>
 					</div>
 					<!-- </div>
@@ -204,6 +212,7 @@
 								</div>
 							</div>
 							<div class="img-wrap-background" style="background-image: url(public/img/LienChieu.jpg);"></div>
+							
 						</a>
 					</div>
 
@@ -374,7 +383,7 @@
 							<button id="load_more" name="load_more" value="Load more" onclick="load_ajax()" class="btn btn-theme-light-2 rounded">Xem thêm</button>
 						</div>
 					</div> -->
-					<script src="public/js/search.js"></script>
+				<script src="public/js/search.js"></script>
 			</div>
 		</section>
 		<!-- ============================ Latest Property For Sale End ================================== -->

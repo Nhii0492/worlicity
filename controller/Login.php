@@ -28,7 +28,7 @@ class LoginController
                 echo '<script>window.location.href = "index.php?controller=Home&action=index";</script>';
             } else {
                 // Đăng nhập không thành công, hiển thị thông báo lỗi
-                echo "lỗi nữa rồi";
+                echo 'Lỗi đăng nhập';
             }
         }
     }
@@ -48,6 +48,7 @@ class LoginController
                 echo '<script>window.location.href = "index.php?controller=Home&action=index";</script>';
             } else {
                 // Đăng ký không thành công, hiển thị thông báo lỗi
+                echo 'Lỗi đăng ký';
             }
         }
     }
