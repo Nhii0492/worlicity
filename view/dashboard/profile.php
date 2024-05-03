@@ -22,7 +22,7 @@
 
             <div class="col-lg-9 col-md-8 col-sm-12">
                 <div class="dashboard-body">
-                    <form action="controller/resultProfile.php" method="POST" enctype="multipart/form-data">
+                    <form action="controller/ResultProfile.php" method="POST" enctype="multipart/form-data">
                         <div class="dashboard-wraper">
 
                             <!-- Basic Information -->
@@ -32,7 +32,7 @@
                                     <div class="form-row">
 
                                         <div class="form-group col-md-6">
-                                            <label>Họ & tên</label>
+                                            <label>Họ và tên</label>
                                             <input type="text" name="fullname" class="form-control" value="<?php echo $user['fullname']; ?>">
                                         </div>
 
@@ -48,7 +48,7 @@
                                         </div>
 
                                         <div class="form-group col-md-6">
-                                            <label>Thành phố</label>
+                                            <label>Quận, Huyện</label>
                                             <input type="text" name="user_address" class="form-control" value="<?php echo $user['user_address']; ?>">
                                         </div>
 
@@ -76,7 +76,6 @@
                             </div>
 
                             <div class="frm_submit_block">
-                                <!-- <h4>Liên kết mạng xã hội</h4> -->
                                 <div class="frm_submit_wrap">
                                     <div class="form-row">
 

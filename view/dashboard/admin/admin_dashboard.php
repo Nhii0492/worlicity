@@ -30,7 +30,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="dashboard_stats_wrap widget-1">
                                 <div class="dashboard_stats_wrap_content">
-                                    <h4><?php echo $propertyCount; ?></h4> <span>Bất động sản</span>
+                                    <h4><?php echo $propertyCount; ?></h4><span>Tin cho thuê</span>
                                 </div>
                                 <div class="dashboard_stats_wrap-icon"><i class="ti-location-pin"></i></div>
                             </div>
@@ -53,7 +53,7 @@
                                 <div class="dashboard_stats_wrap-icon"><i class="fa fa-users"></i></div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
+                        <!-- <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="dashboard_stats_wrap widget-1">
                                 <div class="dashboard_stats_wrap_content">
                                     <h4 id="totalImageCount"><?php echo $imageCount; ?> <span id="percentageSpan">
@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="dashboard_stats_wrap-icon"><i class="fa fa-image"></i></div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="dashboard_stats_wrap widget-1">
                                 <div class="dashboard_stats_wrap_content">
@@ -86,7 +86,7 @@
                     </div>
                     <!--  row -->
 
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-lg-8 col-md-7 col-sm-12">
                             <div class="card">
                                 <div class="card-header">
@@ -107,9 +107,9 @@
                                     <div class="chart" id="extra-area-chart" style="height: 300px;"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <!-- <div class="col-lg-4 col-md-5 col-sm-12">
+                    <!-- <div class="col-lg-4 col-md-5 col-sm-12">
                             <div class="card">
                                 <div class="card-header">
                                     <h6>Notifications</h6>
@@ -173,9 +173,9 @@
                             </div>
                         </div>
                     </div> -->
-                        <!-- row -->
+                    <!-- row -->
 
-                        <!-- <div class="row">
+                    <!-- <div class="row">
                             <div class="col-lg-12 col-md-12">
                                 <div class="card">
                                     <div class="card-header">
@@ -242,12 +242,12 @@
                                 </div>
                             </div>
                         </div> -->
-                        <!-- row -->
+                    <!-- row -->
 
-                    </div>
                 </div>
-
             </div>
+
         </div>
+    </div>
 </section>
 <!-- ============================ User Dashboard End ================================== -->

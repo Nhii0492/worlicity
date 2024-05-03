@@ -13369,8 +13369,8 @@ ul.packages-lists-list li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 33.333333%;
-	flex: 0 0 33.333333%;
+	width: 50%;
+	flex: 0 0 50%;
 	border-right: 1px solid #36bf70;
 }
 .dash_user_footer ul li:last-child {

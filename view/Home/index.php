@@ -43,16 +43,16 @@
 
 			<div class="container">
 
-						<div class="row justify-content-center">
-							<div class="col-xl-12 col-lg-12 col-md-12">
-								<h1 class="big-header-capt mb-0 text-light">WORLICITY</h1>
-								<p class="text-center mb-4 text-light">Tìm kiếm các phòng trọ, nhà trọ, căn hộ tại thành phố Đà Nẵng.</p>
-							</div>
-						</div>
+				<div class="row justify-content-center">
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<h1 class="big-header-capt mb-0 text-light">WORLICITY</h1>
+						<p class="text-center mb-4 text-light">Tìm kiếm các phòng trọ, nhà trọ, căn hộ tại thành phố Đà Nẵng.</p>
+					</div>
+				</div>
 
-										
-						<div class="search" style=" display: flex;justify-content: space-around;align-items: center;">
-        					<div class="select-search" style="width: 900px;
+
+				<div class="search" style=" display: flex;justify-content: space-around;align-items: center;">
+					<div class="select-search" style="width: 900px;
    										 height: 50px;
    										 display: flex;
    										 justify-content: space-evenly;
@@ -61,52 +61,53 @@
   										  margin-top: 20px;
   										  border-radius: 10px;
   										  ">
-        				    <select id="type" style="width: 150px;">
-        				        <option value="">Loại phòng</option>
-       					         <option value="Phòng trọ, nhà trọ">Phòng trọ, nhà trọ</option>
-       					         <option value="Cho thuê căn hộ">Cho thuê căn hộ</option>
-         					    <option value="Tìm người ở ghép">Tìm người ở ghép</option>
-           					 </select>
-							<select id="districtSelect" onchange="updateWards()" style="width: 150px;">
-								<option value="">Quận, huyện</option>
-								<option value="Hải Châu">Hải Châu</option>
-								<option value="Thanh Khê">Thanh Khê</option>
-								<option value="Sơn Trà">Sơn Trà</option>
-								<option value="Cẩm Lệ">Cẩm Lệ</option>
-								<option value="Liên Chiểu">Liên Chiểu</option>
-								<option value="Ngũ Hành Sơn">Ngũ Hành Sơn</option>
-								<option value="Hoà Vang">Hoà Vang</option>
-								<option value="Hoàng Sa">Hoàng Sa</option>
-							</select>
-							<select id="wardSelect" style="width: 150px;">
-								<option value="">Phường, xã</option>
-							</select>
-							<select id="prix" style="width: 150px;">
-								<option value="">Mức giá</option>
-								<option value="Thoả thuận">Thoả thuận</option>
-								<option value="Dưới 1 triệu">Dưới 1 triệu</option>
-								<option value="1 - 2 triệu">1 - 2 triệu</option>
-								<option value="2 - 3 triệu">2 - 3 triệu</option>
-								<option value="3 - 5 triệu">3 - 5 triệu</option>
-								<option value="5 - 7 triệu">5 - 7 triệu</option>
-								<option value="7 - 10 triệu">7 - 10 triệu</option>
-								<option value="10 - 15 triệu">10 - 15 triệu</option>
-								<option value="Trên 15 triệu">Trên 15 triệu</option>
-							</select>
-							<select id="zone" style="width: 150px;">
-								<option value="">Diện tích</option>
-								<option value="Dưới 20m2">Dưới 20m2</option>
-								<option value="Từ 20 - 30m2">Từ 20 - 30m2</option>
-								<option value="Từ 30 - 50m2">Từ 30 - 50m2</option>
-								<option value="Từ 50 - 70m2">Từ 50 - 70m2</option>
-								<option value="Từ 70 - 90m2">Từ 70 - 90m2</option>
-								<option value="Trên 90m2">Trên 90m2</option>
-							</select>
+						<!-- <select id="type" style="width: 150px;">
+							<option value="">Loại phòng</option>
+							<option value="Phòng trọ, nhà trọ">Phòng trọ, nhà trọ</option>
+							<option value="Cho thuê căn hộ">Cho thuê căn hộ</option>
+							<option value="Tìm người ở ghép">Tìm người ở ghép</option>
+						</select> -->
 
-							<img src="public/img/btn-search.svg" id="icon-search" style=" width: 20px;
+						<select id="districtSelect" onchange="updateWards()" style="width: 150px;">
+							<option value="">Quận, huyện</option>
+							<option value="Hải Châu">Hải Châu</option>
+							<option value="Thanh Khê">Thanh Khê</option>
+							<option value="Sơn Trà">Sơn Trà</option>
+							<option value="Cẩm Lệ">Cẩm Lệ</option>
+							<option value="Liên Chiểu">Liên Chiểu</option>
+							<option value="Ngũ Hành Sơn">Ngũ Hành Sơn</option>
+							<option value="Hoà Vang">Hoà Vang</option>
+							<option value="Hoàng Sa">Hoàng Sa</option>
+						</select>
+						<select id="wardSelect" style="width: 150px;">
+							<option value="">Phường, xã</option>
+						</select>
+						<select id="prix" style="width: 150px;">
+							<option value="">Mức giá</option>
+							<option value="Thoả thuận">Thoả thuận</option>
+							<option value="Dưới 1 triệu">Dưới 1 triệu</option>
+							<option value="1 - 2 triệu">1 - 2 triệu</option>
+							<option value="2 - 3 triệu">2 - 3 triệu</option>
+							<option value="3 - 5 triệu">3 - 5 triệu</option>
+							<option value="5 - 7 triệu">5 - 7 triệu</option>
+							<option value="7 - 10 triệu">7 - 10 triệu</option>
+							<option value="10 - 15 triệu">10 - 15 triệu</option>
+							<option value="Trên 15 triệu">Trên 15 triệu</option>
+						</select>
+						<select id="zone" style="width: 150px;">
+							<option value="">Diện tích</option>
+							<option value="Dưới 20m2">Dưới 20m2</option>
+							<option value="Từ 20 - 30m2">Từ 20 - 30m2</option>
+							<option value="Từ 30 - 50m2">Từ 30 - 50m2</option>
+							<option value="Từ 50 - 70m2">Từ 50 - 70m2</option>
+							<option value="Từ 70 - 90m2">Từ 70 - 90m2</option>
+							<option value="Trên 90m2">Trên 90m2</option>
+						</select>
+
+						<img src="public/img/btn-search.svg" id="icon-search" style=" width: 20px;
 					height: 20px;">
-							</div>
-						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- ============================ Hero Banner End ================================== -->
@@ -130,7 +131,7 @@
 									</ul> -->
 								</div>
 							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-1.png);"></div>
+							<div class="img-wrap-background" style="background-image: url(public/img/qhaichau.jpg);"></div>
 						</a>
 					</div>
 
@@ -147,7 +148,7 @@
 									</ul> -->
 								</div>
 							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-2.png);"></div>
+							<div class="img-wrap-background" style="background-image: url(public/img/qthanhkhe.jpg);"></div>
 						</a>
 					</div>
 
@@ -164,7 +165,7 @@
 									</ul> -->
 								</div>
 							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-3.png);"></div>
+							<div class="img-wrap-background" style="background-image: url(public/img/qsontra.jpg);"></div>
 						</a>
 					</div>
 
@@ -181,7 +182,7 @@
 									</ul> -->
 								</div>
 							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-4.png);"></div>
+							<div class="img-wrap-background" style="background-image: url(public/img/qnguhanhson.jpg);"></div>
 						</a>
 					</div>
 					<!-- </div>
@@ -199,7 +200,7 @@
 									</ul> -->
 								</div>
 							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-5.png);"></div>
+							<div class="img-wrap-background" style="background-image: url(public/img/qlienchieu.jpg);"></div>
 						</a>
 					</div>
 
@@ -216,7 +217,7 @@
 									</ul> -->
 								</div>
 							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-6.png);"></div>
+							<div class="img-wrap-background" style="background-image: url(public/img/qhoavang.jpg);"></div>
 						</a>
 					</div>
 
@@ -233,7 +234,7 @@
 									</ul> -->
 								</div>
 							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-7.png);"></div>
+							<div class="img-wrap-background" style="background-image: url(public/img/qcamle.png);"></div>
 						</a>
 					</div>
 
@@ -250,7 +251,7 @@
 									</ul> -->
 								</div>
 							</div>
-							<div class="img-wrap-background" style="background-image: url(public/img/city-1.png);"></div>
+							<div class="img-wrap-background" style="background-image: url(public/img/qhoangsa.jpg);"></div>
 						</a>
 					</div>
 
@@ -370,7 +371,7 @@
 							<button id="load_more" name="load_more" value="Load more" onclick="load_ajax()" class="btn btn-theme-light-2 rounded">Xem thêm</button>
 						</div>
 					</div> -->
-					<script src="public/js/search.js"></script>
+				<script src="public/js/search.js"></script>
 			</div>
 		</section>
 		<!-- ============================ Latest Property For Sale End ================================== -->

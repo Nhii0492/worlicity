@@ -1,12 +1,9 @@
 <?php
-// Kết nối tới cơ sở dữ liệu
 require_once '../config/db.php';
 $db = new connect();
 $conn = $db->getConnection();
-// Bắt đầu session
 session_start();
 
-// Hàm getUrl() di chuyển ra khỏi class connect
 function getUrl($params)
 {
     $baseUrl = "http://localhost/worlicity";

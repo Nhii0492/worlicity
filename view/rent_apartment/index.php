@@ -33,22 +33,22 @@ $utilitiesResult = $conn->query($utilitiesQuery);
 
         <div class="row m-0">
             <div class="short_wraping">
-                <div class="row align-items-center">
-
-                    <div class="col-lg-3 col-md-6 col-sm-12  col-sm-6">
+                <div class="row align-items-right">
+                    <!-- <div class="col-lg-3 col-md-6 col-sm-12  col-sm-6">
                         <ul class="shorting_grid">
                             <li class="list-inline-item"><a href="grid-layout-with-sidebar.html" class="active"><span class="ti-layout-grid2"></span>Grid</a></li>
                             <li class="list-inline-item"><a href="list-layout-with-sidebar.html"><span class="ti-view-list"></span>List</a></li>
                             <li class="list-inline-item"><a href="#"><span class="ti-map-alt"></span>Map</a></li>
                         </ul>
-                    </div>
+                    </div> -->
 
-                    <div class="col-lg-6 col-md-12 col-sm-12 order-lg-2 order-md-3 elco_bor col-sm-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <!-- order-lg-2 order-md-3 elco_bor col-sm-12 -->
                         <div class="shorting_pagination">
                             <div class="shorting_pagination_laft">
-                                <h5>Showing 1-25 of 72 results</h5>
+                                <h4>Phòng trọ, nhà trọ cho thuê</h4>
                             </div>
-                            <div class="shorting_pagination_right">
+                            <!-- <div class="shorting_pagination_right">
                                 <ul>
                                     <li><a href="javascript:void(0);" class="active">1</a></li>
                                     <li><a href="javascript:void(0);">2</a></li>
@@ -57,11 +57,11 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                     <li><a href="javascript:void(0);">5</a></li>
                                     <li><a href="javascript:void(0);">6</a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 order-lg-3 order-md-2 col-sm-6">
+                    <!-- <div class="col-lg-3 col-md-6 col-sm-12 order-lg-3 order-md-2 col-sm-6">
                         <div class="shorting-right">
                             <label>Short By:</label>
                             <div class="dropdown show">
@@ -76,7 +76,7 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -95,15 +95,24 @@ $utilitiesResult = $conn->query($utilitiesQuery);
 
                                 <div class="form-group">
                                     <div class="input-with-icon">
-                                        <input type="text" name="keyword" class="form-control" placeholder="Ex.Nhà hàng xóm =)">
+                                        <input type="text" name="keyword" class="form-control" placeholder="Nhập từ khóa tìm kiếm">
                                         <i class="ti-search"></i>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <div class="input-with-icon">
-                                        <input type="text" name="city" id="city-input" class="form-control" placeholder="Thành phố">
-                                        <i class="ti-location-pin"></i>
+                                    <div class="simple-input">
+                                        <select id="district" name="district" class="form-control">
+                                            <option value="">Quận, huyện</option>
+                                            <option value="Hải Châu">Hải Châu</option>
+                                            <option value="Thanh Khê">Thanh Khê</option>
+                                            <option value="Sơn Trà">Sơn Trà</option>
+                                            <option value="Cẩm Lệ">Cẩm Lệ</option>
+                                            <option value="Liên Chiểu">Liên Chiểu</option>
+                                            <option value="Ngũ Hành Sơn">Ngũ Hành Sơn</option>
+                                            <option value="Hoà Vang">Hoà Vang</option>
+                                            <option value="Hoàng Sa">Hoàng Sa</option>
+                                        </select>
                                     </div>
                                 </div>
 
@@ -121,11 +130,11 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                 <div class="form-group">
                                     <div class="simple-input">
                                         <select id="price" name="price" class="form-control">
-                                            <option value="">Khoảng giá bán</option>
-                                            <option value="500000000">dưới 500 triệu</option>
-                                            <option value="1000000000">500 triệu -> 1 tỷ</option>
-                                            <option value="2000000000">1 tỷ - 2 tỷ</option>
-                                            <option value="5000000000">2 tỷ - 5 tỷ</option>
+                                            <option value="">Khoảng giá</option>
+                                            <option value="2000000">dưới 2 triệu</option>
+                                            <option value="3000000">2 triệu -> 3 triệu</option>
+                                            <option value="4000000">3 triệu -> 4 triệu</option>
+                                            <option value="5000000">4 triệu -> 5 triệu</option>
                                             <option value="">Khác</option>
                                         </select>
                                     </div>
@@ -168,13 +177,14 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                             <option value="2020">2020</option>
                                             <option value="2021">2021</option>
                                             <option value="2022">2022</option>
-                                            <option value="2022">2023</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
                                             <option value="">Khác</option>
                                         </select>
                                     </div>
                                 </div>
 
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <div class="simple-input">
@@ -189,11 +199,11 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 pt-4">
-                                        <h6>Advance Features</h6>
+                                        <h6>Tiện ích</h6>
                                         <ul class="row p-0 m-0">
                                             <?php while ($row = $utilitiesResult->fetch(PDO::FETCH_ASSOC)) { ?>
                                                 <li class="col-lg-6 col-md-6 p-0">
@@ -208,7 +218,7 @@ $utilitiesResult = $conn->query($utilitiesQuery);
 
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 pt-4">
-                                        <button type="submit" class="btn theme-bg rounded full-width">Tìm nhà</button>
+                                        <button type="submit" class="btn theme-bg rounded full-width">Tìm kiếm</button>
                                     </div>
                                 </div>
 

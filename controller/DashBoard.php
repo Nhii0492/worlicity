@@ -116,13 +116,13 @@ class DashBoardController
         require_once 'view/dashboard/admin/admin_dashboard.php';
     }
 
-    // public function admin_account()
-    // {
-    //     $user = $this->user;
-    //     // Lấy danh sách người dùng kèm thông tin bất động sản
-    //     $usersWithProperties = $this->userModel->getUsersWithPropertiesAdmin();
-    //     require_once 'view/dashboard/admin/admin_account.php';
-    // }
+    public function admin_account()
+    {
+        $user = $this->user;
+        // Lấy danh sách người dùng kèm thông tin bất động sản
+        $usersWithProperties = $this->userModel->getUsersWithPropertiesAdmin();
+        require_once 'view/dashboard/admin/admin_account.php';
+    }
 
     public function admin_account_per()
     {
@@ -137,18 +137,18 @@ class DashBoardController
         require_once 'view/dashboard/admin/admin_account_per.php';
     }
 
-    // public function admin_news()
-    // {
-    //     $user = $this->user;
-    //     $newsModel = new NewsModel();
-    //     $newsList = $newsModel->getAllNews();
-    //     require_once 'view/dashboard/admin/admin_news.php';
-    // }
-    // public function admin_property()
-    // {
-    //     $user = $this->user;
-    //     // Lấy danh sách bất động sản và dữ liệu người dùng tương ứng
-    //     $properties = $this->userModel->getAllPropertyAdmin();
-    //     require_once 'view/dashboard/admin/admin_property.php';
-    // }
+    public function admin_news()
+    {
+        $user = $this->user;
+        $newsModel = new NewsModel();
+        $newsList = $newsModel->getAllNews();
+        require_once 'view/dashboard/admin/admin_news.php';
+    }
+    public function admin_property()
+    {
+        $user = $this->user;
+        // Lấy danh sách bất động sản và dữ liệu người dùng tương ứng
+        $properties = $this->userModel->getAllPropertyAdmin();
+        require_once 'view/dashboard/admin/admin_property.php';
+    }
 }

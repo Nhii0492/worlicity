@@ -89,9 +89,9 @@ class NewsModel
     public function getNewsWithNewsID($newsId)
     {
         $query = "SELECT nb.*, u.fullname AS author_fullname, u.avatar_url
-              FROM news_blog nb
-              INNER JOIN users u ON nb.author_id = u.user_id
-              WHERE nb.news_id = :newsId";
+                FROM news_blog nb
+                INNER JOIN users u ON nb.author_id = u.user_id
+                WHERE nb.news_id = :newsId";
         $stmt = $this->db->prepare($query);
         $stmt->bindParam(':newsId', $newsId);
         $stmt->execute();
@@ -103,9 +103,9 @@ class NewsModel
     public function countNewsByTags()
     {
         $query = "SELECT t.tags_id, t.tags_name, COUNT(nt.news_id) AS news_count
-              FROM tags t
-              LEFT JOIN news_tags nt ON t.tags_id = nt.tags_id
-              GROUP BY t.tags_id";
+                FROM tags t
+                LEFT JOIN news_tags nt ON t.tags_id = nt.tags_id
+                GROUP BY t.tags_id";
         $result = $this->db->query($query)->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     }
@@ -114,10 +114,10 @@ class NewsModel
     public function getAllNewsByUserId($userId)
     {
         $query = "SELECT nb.*, u.fullname AS author_fullname, u.avatar_url
-              FROM news_blog nb
-              INNER JOIN users u ON nb.author_id = u.user_id
-              WHERE nb.author_id = :userId
-              ORDER BY nb.news_id DESC";
+                FROM news_blog nb
+                INNER JOIN users u ON nb.author_id = u.user_id
+                WHERE nb.author_id = :userId
+                ORDER BY nb.news_id DESC";
         $stmt = $this->db->prepare($query);
         $stmt->bindParam(':userId', $userId);
         $stmt->execute();
