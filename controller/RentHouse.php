@@ -61,10 +61,10 @@ class RentHouseController
         $minArea = isset($_POST['min_area']) ? $_POST['min_area'] : '';
         $maxArea = isset($_POST['max_area']) ? $_POST['max_area'] : '';
         $utilities = isset($_POST['utilities']) ? $_POST['utilities'] : '';
-        // $offset = isset($_POST['offset']) ? $_POST['offset'] : 0;
-        // $limit = isset($_POST['limit']) ? $_POST['limit'] : 10;
+        $offset = isset($_POST['offset']) ? $_POST['offset'] : 0;
+        $limit = isset($_POST['limit']) ? $_POST['limit'] : 10;
 
-        $result = $this->model->rentRoomProperties($keyword, $district, $propertyType, $price, $bedroom, $bathroom, $age, $minArea, $maxArea, $utilities);
+        $result = $this->model->rentRoomProperties($keyword, $district, $propertyType, $price, $bedroom, $bathroom, $age, $minArea, $maxArea, $utilities, $offset, $limit);
 
         foreach ($result as $key => $row) {
             $result[$key]['formatted_price'] = $this->formatPrice($row['price']);

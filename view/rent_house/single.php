@@ -63,11 +63,11 @@
 
 <!-- ============================ Property Detail Start ================================== -->
 <section class="pt-4">
-	<div class="container">
+	<div class="container" style="display: flex;">
 		<div class="row">
 
 			<!-- property main detail -->
-			<div class="col-lg-8 col-md-12 col-sm-12">
+			<div class="col-lg-12 col-md-12 col-sm-12">
 
 				<div class="property_info_detail_wrap mb-4">
 

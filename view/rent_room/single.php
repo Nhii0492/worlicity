@@ -67,7 +67,7 @@
 		<div class="row">
 
 			<!-- property main detail -->
-			<div class="col-lg-8 col-md-12 col-sm-12">
+			<div class="col-lg-12 col-md-12 col-sm-12">
 
 				<div class="property_info_detail_wrap mb-4">
 
@@ -86,7 +86,7 @@
 							</span>
 							<br>
 							<span>
-								<i class="fas fa-eye"></i> lượt xem <?php echo $property['view_count']; ?>
+								<i class="fas fa-eye"></i> <?php echo $property['view_count']; ?>
 							</span>
 						</div>
 					</div>

@@ -112,7 +112,7 @@
 						<!-- <button type="button" style="display:flex; height:35px; align-items: center; border-radius: 10px; border:0; background-color: #00966a; color: #fff;">Tìm kiếm</button> -->
 						<!-- <img src="public/img/btn-search.svg" id="icon-search" style=" width: 20px; height: 20px;">-->
 						<div class="col-lg-2 col-md-3 col-sm-12 small-padd" style="display:flex;">
-								<button class="btn search-btn" type="submit" value="submit"><i class="fa fa-search-location"></i> Tìm kiếm</button>
+							<button class="btn search-btn" type="submit" value="submit"><i class="fa fa-search-location"></i> Tìm kiếm</button>
 						</div>
 					</div>
 				</div>
@@ -326,8 +326,8 @@
 													<h4 class="listing-name verified"><a href="?controller=RentRoom&action=single&property_id=<?php echo $row['property_id']; ?>" class="prt-link-detail">
 															<?php
 															$property_name = $row['property_name'];
-															if (strlen($property_name) > 150) {
-																$property_name = substr($property_name, 0, 147) . '...';
+															if (strlen($property_name) > 80) {
+																$property_name = substr($property_name, 0, 77) . '...';
 															}
 															echo htmlentities($property_name);
 															?>
