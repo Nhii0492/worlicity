@@ -53,15 +53,7 @@
 
 
 				<div class="search" style=" display: flex;justify-content: space-around;align-items: center;">
-					<div class="select-search" style="width: 900px;
-   									height: 70px;
-   									display: flex;
-   									justify-content: space-evenly;
-   									align-items: center;
-   									background-color: #fff;
-  									margin-top: 20px;
-									border-radius:5px;">
-
+					<div class="select-search">
 						<select id="type" style="width:150px; height:50px; border:0; padding-left: 5px">
 							<option value="">Loại phòng</option>
 							<option value="Phòng trọ, nhà trọ">Phòng trọ, nhà trọ</option>
@@ -111,9 +103,10 @@
 						<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
 						<!-- <button type="button" style="display:flex; height:35px; align-items: center; border-radius: 10px; border:0; background-color: #00966a; color: #fff;">Tìm kiếm</button> -->
 						<!-- <img src="public/img/btn-search.svg" id="icon-search" style=" width: 20px; height: 20px;">-->
-						<div class="col-lg-2 col-md-3 col-sm-12 small-padd" style="display:flex;">
-							<button class="btn search-btn" type="submit" value="submit"><i class="fa fa-search-location"></i> Tìm kiếm</button>
-						</div>
+
+						<button class="btn search-btn" type="submit" value="submit"><i class="fa fa-search-location"></i> Tìm kiếm</button>
+						<!-- <div class="col-lg-2 col-md-3 col-sm-12 small-padd" style="display: flex;">
+						</div> -->
 					</div>
 				</div>
 
