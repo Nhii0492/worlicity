@@ -306,16 +306,17 @@ $utilitiesResult = $conn->query($utilitiesQuery);
 
                                 </div>
                             </div>
-                        <?php } ?>
-                        <!-- End Single Property -->
-
-
-
                         </div>
+                    <?php } ?>
+                    <!-- End Single Property -->
+
+
+
                 </div>
-
-
             </div>
+
+
         </div>
+    </div>
 </section>
 <!-- ============================ All Property ================================== -->

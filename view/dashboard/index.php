@@ -98,18 +98,12 @@
                                                         <?php
                                                         $status = $property['status'];
 
-                                                        $class = '';
-                                                        if ($status == 'Bán') {
-                                                            $class = 'label text-success bg-success-light';
-                                                        } elseif ($status == 'Thuê') {
-                                                            $class = 'label text-warning bg-warning-light';
-                                                        } else {
-                                                            $class = 'label text-danger bg-danger-light';
-                                                        }
+                                                        $class = 'label text-success bg-success-light';
+
                                                         ?>
 
                                                         <td>
-                                                            <div class="<?php echo $class; ?>"><?php echo $property['status']; ?></div>
+                                                            <div class="<?php echo $class; ?>">Thuê</div>
                                                         </td>
                                                         <td><span class="formatted-price" data-price="<?php echo $property['price']; ?>">><?php echo $property['price']; ?></span> VND/<?php echo $property['unit']; ?></td>
                                                         <td><?php echo $property['created_at']; ?></td>

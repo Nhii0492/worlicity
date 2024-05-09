@@ -226,7 +226,7 @@
 								<img src="public/upload/properties/<?php echo $property['image_url']; ?>" class="img-fluid" alt="" />
 							</div>
 							<div class="sides_list_property_detail">
-								<h4><a href="?controller=BdsRent&action=single&property_id=<?php echo $property['property_id']; ?>">
+								<h4><a href="?controller=RentRoom&action=single&property_id=<?php echo $property['property_id']; ?>">
 										<?php
 										$property_name = $property['property_name'];
 

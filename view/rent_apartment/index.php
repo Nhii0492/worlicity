@@ -46,7 +46,7 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                         <!-- order-lg-2 order-md-3 elco_bor col-sm-12 -->
                         <div class="shorting_pagination">
                             <div class="shorting_pagination_laft">
-                                <h4>Phòng trọ, nhà trọ cho thuê</h4>
+                                <h4>Căn hộ cho thuê</h4>
                             </div>
                             <!-- <div class="shorting_pagination_right">
                                 <ul>
@@ -119,10 +119,10 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                 <div class="form-group">
                                     <div class="simple-input">
                                         <select id="ptype" name="propertyTypes" class="form-control">
-                                            <option value="">Loại nhà</option>
-                                            <?php while ($row = $propertyTypesResult->fetch(PDO::FETCH_ASSOC)) { ?>
+                                            <option value="">Căn hộ cho thuê</option>
+                                            <!-- <?php while ($row = $propertyTypesResult->fetch(PDO::FETCH_ASSOC)) { ?>
                                                 <option value="<?php echo $row['type_id']; ?>"><?php echo $row['type_name']; ?></option>
-                                            <?php } ?>
+                                            <?php } ?> -->
                                         </select>
                                     </div>
                                 </div>
@@ -242,7 +242,7 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                     </div>
                                     <div class="list-img-slide">
                                         <div class="click">
-                                            <div><a href="?controller=BdsRent&action=single&property_id=<?php echo $row['property_id']; ?>"><img src="public/upload/properties/<?php echo $row['image_url']; ?>" class="img-fluid mx-auto" alt="" /></a></div>
+                                            <div><a href="?controller=RentRoom&action=single&property_id=<?php echo $row['property_id']; ?>"><img src="public/upload/properties/<?php echo $row['image_url']; ?>" class="img-fluid mx-auto" alt="" /></a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -253,10 +253,8 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                         <div class="listing-short-detail-wrap">
                                             <div class="_card_list_flex mb-2">
                                                 <div class="_card_flex_01">
-                                                    <span class="_list_blickes _netork">VIP</span>
-                                                    <span class="_list_blickes">Đã Thuê</span>
-                                                    <span class="property-type elt_rent"><?php echo $row['age']; ?></span>
                                                     <span class="_list_blickes types"><?php echo $row['type_name']; ?></span>
+                                                    <span class="property-type elt_rent"><?php echo $row['age']; ?></span>
                                                 </div>
                                                 <div class="_card_flex_last">
                                                     <h6 class="listing-card-info-price mb-0">
@@ -265,11 +263,11 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                             </div>
                                             <div class="_card_list_flex">
                                                 <div class="_card_flex_01">
-                                                    <h4 class="listing-name verified"><a href="?controller=BdsRent&action=single&property_id=<?php echo $row['property_id']; ?>" class="prt-link-detail">
+                                                    <h4 class="listing-name verified"><a href="?controller=RentRoom&action=single&property_id=<?php echo $row['property_id']; ?>" class="prt-link-detail">
                                                             <?php
-                                                            $property_name = $row['property_name'] . ', ' . $row['city'];
-                                                            if (strlen($property_name) > 70) {
-                                                                $property_name = substr($property_name, 0, 67) . '...';
+                                                            $property_name = $row['property_name'];
+                                                            if (strlen($property_name) > 150) {
+                                                                $property_name = substr($property_name, 0, 147) . '...';
                                                             }
                                                             echo htmlentities($property_name);
                                                             ?>
@@ -282,10 +280,10 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                         <div class="price-features-wrapper">
                                             <div class="list-fx-features">
                                                 <div class="listing-card-info-icon">
-                                                    <div class="inc-fleat-icon"><img src="public/img/bed.svg" width="13" alt="" /></div><?php echo $row['bedroom_count']; ?> Beds
+                                                    <div class="inc-fleat-icon"><img src="public/img/bed.svg" width="13" alt="" /></div><?php echo $row['bedroom_count']; ?> phòng ngủ
                                                 </div>
                                                 <div class="listing-card-info-icon">
-                                                    <div class="inc-fleat-icon"><img src="public/img/bathtub.svg" width="13" alt="" /></div><?php echo $row['bathroom_count']; ?> Bath
+                                                    <div class="inc-fleat-icon"><img src="public/img/bathtub.svg" width="13" alt="" /></div><?php echo $row['bathroom_count']; ?> toilet
                                                 </div>
                                                 <div class="listing-card-info-icon">
                                                     <div class="inc-fleat-icon"><img src="public/img/move.svg" width="13" alt="" /></div><?php echo $row['real_area']; ?> m<sup>2
@@ -297,34 +295,28 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                             <div class="footer-first">
                                                 <div class="foot-rates">
                                                     <span class="elio_rate perfect"><i class="fas fa-eye"></i> <?php echo $row['view_count']; ?></span>
-                                                    <span class="elio_rate good">4.2</span>
-                                                    <div class="_rate_stio">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                    </div>
+                                                    <span class="elio_rate perfect"><i class="fas fa-map-marker-alt"></i> <?php echo $row['district']; ?></span>
                                                 </div>
                                             </div>
                                             <div class="footer-flex">
-                                                <a href="?controller=BdsRent&action=single&property_id=<?php echo $row['property_id']; ?>" class="prt-view">View Detail</a>
+                                                <a href="?controller=RentRoom&action=single&property_id=<?php echo $row['property_id']; ?>" class="prt-view">View Detail</a>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-                        <?php } ?>
-                        <!-- End Single Property -->
-
-
-
                         </div>
+                    <?php } ?>
+                    <!-- End Single Property -->
+
+
+
                 </div>
-
-
             </div>
+
+
         </div>
+    </div>
 </section>
 <!-- ============================ All Property ================================== -->

@@ -28,7 +28,7 @@ class RentShareController
     {
         $keyword = isset($_POST['keyword']) ? $_POST['keyword'] : '';
         $district = isset($_POST['district']) ? $_POST['district'] : '';
-        $propertyType = isset($_POST['propertyTypes']) ? $_POST['propertyTypes'] : '';
+        $propertyType = 4;
         $price = isset($_POST['price']) ? $_POST['price'] : '';
         $bedroom = isset($_POST['bedroom']) ? $_POST['bedroom'] : '';
         $bathroom = isset($_POST['bathroom']) ? $_POST['bathroom'] : '';
@@ -45,14 +45,14 @@ class RentShareController
             $result[$key]['formatted_price'] = $this->formatPrice($row['price']);
         }
 
-        require_once 'view/rent_room/index.php';
+        require_once 'view/rent_share/index.php';
     }
 
     private function indexDistrict($input_district)
     {
         $keyword = isset($_POST['keyword']) ? $_POST['keyword'] : '';
         $district = $input_district;
-        $propertyType = isset($_POST['propertyTypes']) ? $_POST['propertyTypes'] : '';
+        $propertyType = 4;
         $price = isset($_POST['price']) ? $_POST['price'] : '';
         $bedroom = isset($_POST['bedroom']) ? $_POST['bedroom'] : '';
         $bathroom = isset($_POST['bathroom']) ? $_POST['bathroom'] : '';
@@ -69,7 +69,7 @@ class RentShareController
             $result[$key]['formatted_price'] = $this->formatPrice($row['price']);
         }
 
-        require_once 'view/rent_room/index.php';
+        require_once 'view/rent_share/index.php';
     }
 
     public function single()
@@ -97,7 +97,7 @@ class RentShareController
                 $data['property'] = $property;
                 $data['propertyImages'] = $propertyImages;
                 $data['similarProperties'] = $similarProperties;
-                require_once 'view/rent_room/single.php';
+                require_once 'view/rent_share/single.php';
             } else {
                 // Xử lý trường hợp không tìm thấy bất động sản hoặc không có giá trị 'price'
                 echo "Không tìm thấy bất động sản hoặc không có giá.";
