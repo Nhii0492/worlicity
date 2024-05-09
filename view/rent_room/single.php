@@ -1,5 +1,5 @@
 <!-- ============================ Page Title Start================================== -->
-<div class="page-title" style="background:#f4f4f4 url(public/img/slider-1.jpg);" data-overlay="5">
+<div class="page-title" style="background:#f4f4f4 url(public/img/slider.jpg);" data-overlay="5">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12">
@@ -63,7 +63,7 @@
 
 <!-- ============================ Property Detail Start ================================== -->
 <section class="pt-4">
-	<div class="container">
+	<div class="container" style="display: flex;">
 		<div class="row">
 
 			<!-- property main detail -->

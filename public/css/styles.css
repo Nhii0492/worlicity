@@ -6022,7 +6022,7 @@ h3.big-header-capt {
 	border: 1px solid #bec2cc;
 }
 .small-padd {
-	padding: 0 5px !important;
+	padding: 0 0px !important;
 }
 .full_search_box.hero_search-radius {
 	background: #ffffff;
@@ -11412,7 +11412,6 @@ span.approved-agent i {
 	font-weight: 500;
 	position: relative;
 	padding: 0;
-	margin-bottom: 10px;
 }
 .st-search-form-tour.withlbl .form-group {
 	height: 90px;

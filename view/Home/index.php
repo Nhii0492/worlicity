@@ -46,7 +46,7 @@
 				<div class="row justify-content-center">
 					<div class="col-xl-12 col-lg-12 col-md-12">
 						<h1 class="big-header-capt mb-0 text-light">WORLICITY</h1>
-						<h3 class="big-header-capt mb-3 text-light">TÌM KIẾM CÁC PHÒNG TRỌ, NHÀ TRỌ, NHÀ NGUYÊN CĂN, CĂN HỘ CHO THUÊ TẠI THÀNH PHỐ ĐÀ NẴNG</h3>
+						<h3 class="big-header-capt mb-3 text-light" style="font-size: 20px; display:flex;justify-content: center;">TÌM KIẾM CÁC PHÒNG TRỌ, NHÀ TRỌ, NHÀ NGUYÊN CĂN, CĂN HỘ CHO THUÊ TẠI THÀNH PHỐ ĐÀ NẴNG</h3>
 						<!-- <p class="text-center mb-0 text-light">Tìm kiếm các phòng trọ, nhà trọ, căn hộ tại thành phố Đà Nẵng.</p> -->
 					</div>
 				</div>
@@ -111,10 +111,8 @@
 						<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
 						<!-- <button type="button" style="display:flex; height:35px; align-items: center; border-radius: 10px; border:0; background-color: #00966a; color: #fff;">Tìm kiếm</button> -->
 						<!-- <img src="public/img/btn-search.svg" id="icon-search" style=" width: 20px; height: 20px;">-->
-						<div class="col-lg-2 col-md-3 col-sm-12 small-padd">
-							<div class="form-group none">
+						<div class="col-lg-2 col-md-3 col-sm-12 small-padd" style="display:flex;">
 								<button class="btn search-btn" type="submit" value="submit"><i class="fa fa-search-location"></i> Tìm kiếm</button>
-							</div>
 						</div>
 					</div>
 				</div>
