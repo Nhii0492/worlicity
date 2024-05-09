@@ -15,9 +15,9 @@ class RentRoomController
             $formatted_price = number_format($price / 1000000000, 1);
             return $formatted_price . " tỷ";
         } else if ($price >= 1000000) {
-            return number_format($price / 1000000, 0) . " triệu";
+            return number_format($price / 1000000, 1) . " triệu";
         } else if ($price >= 1000) {
-            return number_format($price / 1000, 0) . " nghìn";
+            return number_format($price / 1000, 1) . " nghìn";
         } else {
             return $price;
         }
@@ -28,7 +28,32 @@ class RentRoomController
     {
         $keyword = isset($_POST['keyword']) ? $_POST['keyword'] : '';
         $district = isset($_POST['district']) ? $_POST['district'] : '';
-        $propertyType = isset($_POST['propertyTypes']) ? $_POST['propertyTypes'] : '';
+        // $propertyType = isset($_POST['propertyTypes']) ? $_POST['propertyTypes'] : '';
+        $propertyType = 1;
+        $price = isset($_POST['price']) ? $_POST['price'] : '';
+        $bedroom = isset($_POST['bedroom']) ? $_POST['bedroom'] : '';
+        $bathroom = isset($_POST['bathroom']) ? $_POST['bathroom'] : '';
+        $age = isset($_POST['age']) ? $_POST['age'] : '';
+        $minArea = isset($_POST['min_area']) ? $_POST['min_area'] : '';
+        $maxArea = isset($_POST['max_area']) ? $_POST['max_area'] : '';
+        $utilities = isset($_POST['utilities']) ? $_POST['utilities'] : '';
+        $offset = isset($_POST['offset']) ? $_POST['offset'] : 0;
+        $limit = isset($_POST['limit']) ? $_POST['limit'] : 10;
+
+        $result = $this->model->rentRoomProperties($keyword, $district, $propertyType, $price, $bedroom, $bathroom, $age, $minArea, $maxArea, $utilities, $offset, $limit);
+
+        foreach ($result as $key => $row) {
+            $result[$key]['formatted_price'] = $this->formatPrice($row['price']);
+        }
+
+        require_once 'view/rent_room/index.php';
+    }
+
+    private function indexDistrict($input_district)
+    {
+        $keyword = isset($_POST['keyword']) ? $_POST['keyword'] : '';
+        $district = $input_district;
+        $propertyType = 1;
         $price = isset($_POST['price']) ? $_POST['price'] : '';
         $bedroom = isset($_POST['bedroom']) ? $_POST['bedroom'] : '';
         $bathroom = isset($_POST['bathroom']) ? $_POST['bathroom'] : '';
@@ -82,5 +107,45 @@ class RentRoomController
             // Xử lý trường hợp không có ID bất động sản được truyền vào
             echo "Vui lòng cung cấp ID bất động sản.";
         }
+    }
+
+    public function thanhkhe()
+    {
+        $this->indexDistrict('Thanh Khê');
+    }
+
+    public function haichau()
+    {
+        $this->indexDistrict('Hải Châu');
+    }
+
+    public function lienchieu()
+    {
+        $this->indexDistrict('Liên Chiểu');
+    }
+
+    public function camle()
+    {
+        $this->indexDistrict('Cẩm Lệ');
+    }
+
+    public function sontra()
+    {
+        $this->indexDistrict('Sơn Trà');
+    }
+
+    public function nguhanhson()
+    {
+        $this->indexDistrict('Ngũ Hành Sơn');
+    }
+
+    public function hoavang()
+    {
+        $this->indexDistrict('Hòa Vang');
+    }
+
+    public function hoangsa()
+    {
+        $this->indexDistrict('Hoàng Sa');
     }
 }

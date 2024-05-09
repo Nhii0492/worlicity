@@ -110,27 +110,27 @@ require_once "model/Property.php";
 
 						<li><a href="index.php?controller=RentRoom&action=index">Phòng trọ, nhà trọ<span class="submenu-indicator"></span></a>
 							<ul class="nav-dropdown nav-submenu">
-								<li><a href="index.php?controller=RentRoom&action=index">Thanh Khê<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentRoom&action=index">Hải Châu<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentRoom&action=index">Liên Chiểu<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentRoom&action=index">Cẩm Lệ<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentRoom&action=index">Sơn Trà<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentRoom&action=index">Ngũ Hành Sơn<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentRoom&action=index">Hoà Vang<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentRoom&action=index">Hoàng Sa<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentRoom&action=thanhkhe">Thanh Khê<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentRoom&action=haichau">Hải Châu<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentRoom&action=lienchieu">Liên Chiểu<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentRoom&action=camle">Cẩm Lệ<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentRoom&action=sontra">Sơn Trà<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentRoom&action=nguhanhson">Ngũ Hành Sơn<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentRoom&action=hoavang">Hoà Vang<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentRoom&action=hoangsa">Hoàng Sa<span class="submenu-indicator"></span></a></li>
 							</ul>
 						</li>
 
 						<li><a href="index.php?controller=RentHouse&action=index">Nhà nguyên căn<span class="submenu-indicator"></span></a>
 							<ul class="nav-dropdown nav-submenu">
-								<li><a href="index.php?controller=RentHouse&action=index">Thanh Khê<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentHouse&action=index">Hải Châu<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentHouse&action=index">Liên Chiểu<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentHouse&action=index">Cẩm Lệ<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentHouse&action=index">Sơn Trà<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentHouse&action=index">Ngũ Hành Sơn<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentHouse&action=index">Hoà Vang<span class="submenu-indicator"></span></a></li>
-								<li><a href="index.php?controller=RentHouse&action=index">Hoàng Sa<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentHouse&action=thanhkhe">Thanh Khê<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentHouse&action=haichau">Hải Châu<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentHouse&action=lienchieu">Liên Chiểu<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentHouse&action=camle">Cẩm Lệ<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentHouse&action=sontra">Sơn Trà<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentHouse&action=nguhanhson">Ngũ Hành Sơn<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentHouse&action=hoavang">Hoà Vang<span class="submenu-indicator"></span></a></li>
+								<li><a href="index.php?controller=RentHouse&action=hoangsa">Hoàng Sa<span class="submenu-indicator"></span></a></li>
 							</ul>
 						</li>
 

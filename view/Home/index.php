@@ -54,14 +54,13 @@
 
 				<div class="search" style=" display: flex;justify-content: space-around;align-items: center;">
 					<div class="select-search" style="width: 900px;
-   										height: 70px;
-   										display: flex;
-   										justify-content: space-evenly;
-   										align-items: center;
-   										background-color: #fff;
-  										margin-top: 20px;
-										border-radius:5px;
-  										">
+   									height: 70px;
+   									display: flex;
+   									justify-content: space-evenly;
+   									align-items: center;
+   									background-color: #fff;
+  									margin-top: 20px;
+									border-radius:5px;">
 
 						<select id="type" style="width:150px; height:50px; border:0; padding-left: 5px">
 							<option value="">Loại phòng</option>
@@ -132,7 +131,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
+						<a href="index.php?controller=RentRoom&action=haichau" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Hải Châu</h4>
@@ -150,7 +149,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
+						<a href="index.php?controller=RentRoom&action=thanhkhe" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Thanh Khê</h4>
@@ -169,7 +168,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
+						<a href="index.php?controller=RentRoom&action=sontra" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Sơn Trà</h4>
@@ -187,7 +186,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
+						<a href="index.php?controller=RentRoom&action=nguhanhson" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Ngũ Hành Sơn</h4>
@@ -207,7 +206,7 @@
 				<div class="row justify-content-center"> -->
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
+						<a href="index.php?controller=RentRoom&action=lienchieu" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Liên Chiểu</h4>
@@ -225,7 +224,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
+						<a href="index.php?controller=RentRoom&action=hoavang" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Hòa Vang</h4>
@@ -242,7 +241,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
+						<a href="index.php?controller=RentRoom&action=camle" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Cẩm Lệ</h4>
@@ -259,7 +258,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="#" class="img-wrap style-2">
+						<a href="index.php?controller=RentRoom&action=hoangsa" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Hoàng Sa</h4>
@@ -301,12 +300,12 @@
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
 							<div class="property-listing list_view">
 								<div class="listing-img-wrapper">
-									<div class="_exlio_125" style="background:<?php echo ($row['status'] == 'Bán') ? '' : (($row['status'] == 'Thuê') ? '#0072c6 ' : ''); ?>">
-										<?php echo $row['status']; ?>
+									<div class="_exlio_125" style="background: #00966a">
+										<?php echo $row['district']; ?>
 									</div>
 									<div class="list-img-slide">
 										<div class="click">
-											<div><a href="?controller=BdsRent&action=single&property_id=<?php echo $row['property_id']; ?>"><img src="public/upload/properties/<?php echo $row['image_url']; ?>" class="img-fluid mx-auto" alt="" /></a></div>
+											<div><a href="?controller=RentRoom&action=single&property_id=<?php echo $row['property_id']; ?>"><img src="public/upload/properties/<?php echo $row['image_url']; ?>" class="img-fluid mx-auto" alt="" /></a></div>
 
 										</div>
 									</div>
@@ -316,9 +315,9 @@
 										<div class="listing-short-detail-wrap">
 											<div class="_card_list_flex mb-2">
 												<div class="_card_flex_01">
-													<span class="_list_blickes _netork">VIP</span>
-													<span class="property-type elt_rent"><?php echo $row['age']; ?></span>
+													<!-- <span class="_list_blickes _netork">VIP</span> -->
 													<span class="_list_blickes types"><?php echo $row['type_name']; ?></span>
+													<span class="property-type elt_rent"><?php echo $row['age']; ?></span>
 												</div>
 												<div class="_card_flex_last">
 													<h6 class="listing-card-info-price mb-0"></h6>
@@ -326,11 +325,11 @@
 											</div>
 											<div class="_card_list_flex">
 												<div class="_card_flex_01">
-													<h4 class="listing-name verified"><a href="?controller=BdsRent&action=single&property_id=<?php echo $row['property_id']; ?>" class="prt-link-detail">
+													<h4 class="listing-name verified"><a href="?controller=RentRoom&action=single&property_id=<?php echo $row['property_id']; ?>" class="prt-link-detail">
 															<?php
-															$property_name = $row['property_name'] . ', ' . $row['city'];
-															if (strlen($property_name) > 70) {
-																$property_name = substr($property_name, 0, 67) . '...';
+															$property_name = $row['property_name'];
+															if (strlen($property_name) > 150) {
+																$property_name = substr($property_name, 0, 147) . '...';
 															}
 															echo htmlentities($property_name);
 															?>
@@ -343,10 +342,10 @@
 									<div class="price-features-wrapper">
 										<div class="list-fx-features">
 											<div class="listing-card-info-icon">
-												<div class="inc-fleat-icon"><img src="public/img/bed.svg" width="13" alt="" /></div><?php echo $row['bedroom_count']; ?> Beds
+												<div class="inc-fleat-icon"><img src="public/img/bed.svg" width="13" alt="" /></div><?php echo $row['bedroom_count']; ?> phòng
 											</div>
 											<div class="listing-card-info-icon">
-												<div class="inc-fleat-icon"><img src="public/img/bathtub.svg" width="13" alt="" /></div><?php echo $row['bathroom_count']; ?> Baths
+												<div class="inc-fleat-icon"><img src="public/img/bathtub.svg" width="13" alt="" /></div><?php echo $row['bathroom_count']; ?> toilet
 											</div>
 											<div class="listing-card-info-icon">
 												<div class="inc-fleat-icon"><img src="public/img/move.svg" width="13" alt="" /></div><?php echo $row['real_area']; ?> m<sup>2</sup>
@@ -361,8 +360,8 @@
 
 													<?php
 													$price = $row['formatted_price'];
-													if (mb_strlen($price) > 6) {
-														$price = mb_substr($price, 0, 6) . '';
+													if (mb_strlen($price) > 10) {
+														$price = mb_substr($price, 0, 10) . '';
 													}
 													echo htmlentities($price);
 													?>/<?php echo $row['unit']; ?>
@@ -371,7 +370,7 @@
 											</div>
 										</div>
 										<div class="footer-flex">
-											<a href="?controller=BdsRent&action=single&property_id=<?php echo $row['property_id']; ?>" class="prt-view">Xem chi tiết</a>
+											<a href="?controller=RentRoom&action=single&property_id=<?php echo $row['property_id']; ?>" class="prt-view">Xem chi tiết</a>
 										</div>
 									</div>
 								</div>

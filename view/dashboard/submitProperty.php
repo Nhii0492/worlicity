@@ -22,6 +22,10 @@ $bedroomsResult = $conn->query($bedroomsQuery);
 $bathroomsQuery = "SELECT * FROM bathrooms";
 $bathroomsResult = $conn->query($bathroomsQuery);
 
+// Lấy dữ liệu từ bảng "genders"
+$genderQuery = "SELECT * FROM genders";
+$genderResult = $conn->query($genderQuery);
+
 // Lấy dữ liệu từ bảng "utilities"
 $utilitiesQuery = "SELECT * FROM utilities";
 $utilitiesResult = $conn->query($utilitiesQuery);
@@ -80,7 +84,7 @@ $loggedIn = $loginModel->isLoggedIn();
                 </div>
 
                 <!-- Submit Form -->
-                <form action="controller/resultSubmit.php" method="POST" enctype="multipart/form-data">
+                <form action="controller/ResultSubmit.php" method="POST" enctype="multipart/form-data">
                     <div class="col-lg-12 col-md-12">
 
                         <div class="submit-page p-0">
@@ -94,9 +98,9 @@ $loggedIn = $loginModel->isLoggedIn();
                                             <label for="property_name">Tên phòng trọ</label>
                                             <input type="text" id="property_name" name="property_name" required class="form-control">
                                         </div>
-                                       
+
                                         <div class="form-group col-md-6">
-                                            <label for="age"  style="width: 200px">Năm hoàn thành (Tùy chọn)</label>
+                                            <label for="age" style="width: 200px">Năm hoàn thành</label>
                                             <input type="text" id="age" name="age" required class="form-control">
                                         </div>
 
@@ -104,7 +108,7 @@ $loggedIn = $loginModel->isLoggedIn();
                                             <label for="property_type">Loại phòng</label>
                                             <!-- Load data -->
                                             <select id="property_type" name="property_type" required class="form-control">
-                                                <option value="">&nbsp;</option>
+                                                <!-- <option value="">&nbsp;</option> -->
                                                 <?php while ($row = $propertyTypesResult->fetch(PDO::FETCH_ASSOC)) { ?>
                                                     <option value="<?php echo $row['type_id']; ?>"><?php echo $row['type_name']; ?></option>
                                                 <?php } ?>
@@ -113,14 +117,14 @@ $loggedIn = $loginModel->isLoggedIn();
                                         </div>
 
                                         <div class="form-group col-md-6">
-                                            <label for="price">Giá</label>
+                                            <label for="price">Giá (Ví dụ: 2000000)</label>
                                             <input type="text" id="price" name="price" required class="form-control" placeholder="">
                                         </div>
 
                                         <div class="form-group col-md-6">
                                             <label>Đơn vị</label>
                                             <select id="unit" name="unit" class="form-control">
-                                                <option value="">&nbsp;</option>
+                                                <!-- <option value="">&nbsp;</option> -->
                                                 <option value="tháng">giá/tháng</option>
                                                 <option value="m²">giá/m²</option>
                                                 <option value="căn">giá/căn</option>
@@ -151,7 +155,7 @@ $loggedIn = $loginModel->isLoggedIn();
                                             <label for="bedroom">Phòng ngủ</label>
                                             <!-- Load data -->
                                             <select id="bedroom" name="bedroom" required class="form-control">
-                                                <option value="">&nbsp;</option>
+                                                <!-- <option value="">&nbsp;</option> -->
                                                 <?php while ($row = $bedroomsResult->fetch(PDO::FETCH_ASSOC)) { ?>
                                                     <option value="<?php echo $row['bedroom_id']; ?>"><?php echo $row['bedroom_count']; ?></option>
                                                 <?php } ?>
@@ -163,7 +167,7 @@ $loggedIn = $loginModel->isLoggedIn();
                                             <label for="bathroom">Phòng tắm</label>
                                             <!-- Load data -->
                                             <select id="bathroom" name="bathroom" required class="form-control">
-                                                <option value="">&nbsp;</option>
+                                                <!-- <option value="">&nbsp;</option> -->
                                                 <?php while ($row = $bathroomsResult->fetch(PDO::FETCH_ASSOC)) { ?>
                                                     <option value="<?php echo $row['bathroom_id']; ?>"><?php echo $row['bathroom_count']; ?></option>
                                                 <?php } ?>
@@ -171,6 +175,17 @@ $loggedIn = $loginModel->isLoggedIn();
                                             <!-- Load data -->
                                         </div>
 
+                                        <div class="form-group col-md-6">
+                                            <label for="gender">Giới tính người thuê</label>
+                                            <!-- Load data -->
+                                            <select id="gender" name="gender" required class="form-control">
+                                                <!-- <option value="">&nbsp;</option> -->
+                                                <?php while ($row = $genderResult->fetch(PDO::FETCH_ASSOC)) { ?>
+                                                    <option value="<?php echo $row['gender_id']; ?>"><?php echo $row['gender_name']; ?></option>
+                                                <?php } ?>
+                                            </select>
+                                            <!-- Load data -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -194,7 +209,7 @@ $loggedIn = $loginModel->isLoggedIn();
                                     <div class="form-row">
 
                                         <div class="form-group col-md-6">
-                                            <label for="address">Địa chỉ</label>
+                                            <label for="address">Địa chỉ (số nhà, tên đường, phường xã)</label>
                                             <input type="text" name="address" required class="form-control">
                                         </div>
 
@@ -250,9 +265,11 @@ $loggedIn = $loginModel->isLoggedIn();
                                 </div>
                             </div>
 
+
+
                             <div class="form-group">
                                 <div class="col-lg-12 col-md-12">
-                                    <button class="btn btn-theme" type="submit" name="submit">Đăng bất động sản</button>
+                                    <button class="btn btn-theme" type="submit" name="submit">Đăng tin cho thuê</button>
                                 </div>
                             </div>
 

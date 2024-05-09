@@ -53,9 +53,9 @@ class HomeController
             $formatted_price = number_format($price / 1000000000, 1);
             return $formatted_price . " tỷ";
         } else if ($price >= 1000000) {
-            return number_format($price / 1000000, 0) . " triệu";
+            return number_format($price / 1000000, 1) . " triệu";
         } else if ($price >= 1000) {
-            return number_format($price / 1000, 0) . " nghìn";
+            return number_format($price / 1000, 1) . " nghìn";
         } else {
             return $price;
         }

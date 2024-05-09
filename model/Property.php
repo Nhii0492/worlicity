@@ -123,7 +123,7 @@ class ModelHome extends Mastermodel
                 FROM property_images
                 GROUP BY property_id
             ) pi ON p.property_id = pi.property_id
-            WHERE p.type_id = 1";
+            WHERE p.type_id = $propertyType";
 
         $conditions = array();
         $params = array();
@@ -208,7 +208,7 @@ class ModelHome extends Mastermodel
 
     public function getPropertyById($propertyId)
     {
-        $query = "SELECT p.*, pt.type_name, bd.bedroom_count, ba.bathroom_count, l.district, pi.image_url, GROUP_CONCAT(DISTINCT u1.utility_name SEPARATOR ', ') AS utilities, u2.username, u2.fullname, u2.user_address, u2.state, u2.about, u2.phone_number, u2.facebook, u2.linkedin, u2.avatar_url, p.view_count
+        $query = "SELECT p.*, pt.type_name, bd.bedroom_count, ba.bathroom_count, l.district, pi.image_url, GROUP_CONCAT(DISTINCT u1.utility_name SEPARATOR ', ') AS utilities, u2.username, u2.fullname, u2.user_address, u2.state, u2.about, u2.phone_number, u2.facebook, u2.avatar_url, p.view_count
         FROM properties p
         INNER JOIN property_types pt ON p.type_id = pt.type_id
         INNER JOIN property_details pd ON p.property_id = pd.property_id
@@ -266,6 +266,6 @@ class ModelHome extends Mastermodel
     {
         $query = 'UPDATE properties SET view_count = view_count + 1 WHERE property_id = :propertyId';
         $params = array(':propertyId' => $propertyId);
-        $this->db->exec($query, $params);
+        $this->db->execute($query, $params);
     }
 }
