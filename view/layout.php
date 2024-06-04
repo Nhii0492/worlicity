@@ -160,14 +160,8 @@ require_once "model/Property.php";
 							</ul>
 						</li>
 
-						<li><a href="index.php?controller=Blog&action=index">Tin tức<span class="submenu-indicator"></span></a>
-							<ul class="nav-dropdown nav-submenu">
-								<li><a href="index.php?controller=Blog&action=index">Báo cáo thị trường</a></li>
-								<li><a href="index.php?controller=Blog&action=index">Quy hoạch - Pháp lý</a></li>
-								<li><a href="index.php?controller=Blog&action=index">Tài chính</a></li>
-								<li><a href="index.php?controller=Blog&action=index">Tin tức khác</a></li>
-
-							</ul>
+						<li>
+							<a href="index.php?controller=Blog&action=index">Tin tức<span class="submenu-indicator"></span></a>
 						</li>
 
 					</ul>
@@ -193,8 +187,13 @@ require_once "model/Property.php";
 											<li><a href="index.php?controller=DashBoard&action=index"><i class="fa fa-tachometer-alt"></i>Trang quản trị</a></li>
 											<li><a href="index.php?controller=DashBoard&action=profile"><i class="fa fa-user-tie"></i>Thông tin cá nhân</a></li>
 											<li><a href="index.php?controller=DashBoard&action=myProperty"><i class="fa fa-tasks"></i>Nhà của bạn</a></li>
-											<li><a href="index.php?controller=DashBoard&action=saveProperty"><i class="fa fa-bookmark"></i>Blogs cá nhân</a></li>
-											<li><a href="index.php?controller=DashBoard&action=newProperty"><i class="fa fa-pen-nib"></i>Tạo Blogs</a></li>
+											<?php
+											if (isset($_SESSION["uauth"]["account_type_id"]) && $_SESSION["uauth"]["account_type_id"] == 1 || $_SESSION["uauth"]["account_type_id"] == 1) {
+												echo '<li><a href="index.php?controller=DashBoard&action=saveProperty"><i class="fa fa-bookmark"></i>Blogs cá nhân</a></li>';
+												echo '<li><a href="index.php?controller=DashBoard&action=newProperty"><i class="fa fa-pen-nib"></i>Tạo Blogs</a></li>';
+											} else {
+											}
+											?>
 											<li><a href="index.php?controller=DashBoard&action=changePassword"><i class="fa fa-unlock-alt"></i>Đổi mật khẩu</a></li>
 											<li><a href="index.php?controller=Logout&action=index"><i class="fa fa-power-off"></i>Thoát</a></li>
 										</ul>

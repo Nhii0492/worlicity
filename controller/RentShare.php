@@ -32,14 +32,11 @@ class RentShareController
         $price = isset($_POST['price']) ? $_POST['price'] : '';
         $bedroom = isset($_POST['bedroom']) ? $_POST['bedroom'] : '';
         $bathroom = isset($_POST['bathroom']) ? $_POST['bathroom'] : '';
-        $age = isset($_POST['age']) ? $_POST['age'] : '';
-        $minArea = isset($_POST['min_area']) ? $_POST['min_area'] : '';
-        $maxArea = isset($_POST['max_area']) ? $_POST['max_area'] : '';
         $utilities = isset($_POST['utilities']) ? $_POST['utilities'] : '';
         $offset = isset($_POST['offset']) ? $_POST['offset'] : 0;
         $limit = isset($_POST['limit']) ? $_POST['limit'] : 10;
 
-        $result = $this->model->rentRoomProperties($keyword, $district, $propertyType, $price, $bedroom, $bathroom, $age, $minArea, $maxArea, $utilities, $offset, $limit);
+        $result = $this->model->rentRoomProperties($keyword, $district, $propertyType, $price, $bedroom, $bathroom, $utilities, $offset, $limit);
 
         foreach ($result as $key => $row) {
             $result[$key]['formatted_price'] = $this->formatPrice($row['price']);
@@ -56,14 +53,11 @@ class RentShareController
         $price = isset($_POST['price']) ? $_POST['price'] : '';
         $bedroom = isset($_POST['bedroom']) ? $_POST['bedroom'] : '';
         $bathroom = isset($_POST['bathroom']) ? $_POST['bathroom'] : '';
-        $age = isset($_POST['age']) ? $_POST['age'] : '';
-        $minArea = isset($_POST['min_area']) ? $_POST['min_area'] : '';
-        $maxArea = isset($_POST['max_area']) ? $_POST['max_area'] : '';
         $utilities = isset($_POST['utilities']) ? $_POST['utilities'] : '';
         $offset = isset($_POST['offset']) ? $_POST['offset'] : 0;
         $limit = isset($_POST['limit']) ? $_POST['limit'] : 10;
 
-        $result = $this->model->rentRoomProperties($keyword, $district, $propertyType, $price, $bedroom, $bathroom, $age, $minArea, $maxArea, $utilities, $offset, $limit);
+        $result = $this->model->rentRoomProperties($keyword, $district, $propertyType, $price, $bedroom, $bathroom, $utilities, $offset, $limit);
 
         foreach ($result as $key => $row) {
             $result[$key]['formatted_price'] = $this->formatPrice($row['price']);

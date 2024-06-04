@@ -53,61 +53,57 @@
 
 
 				<div class="search" style=" display: flex;justify-content: space-around;align-items: center;">
-					<div class="select-search">
-						<select id="type" style="width:150px; height:50px; border:0; padding-left: 5px">
-							<option value="">Loại phòng</option>
-							<option value="Phòng trọ, nhà trọ">Phòng trọ, nhà trọ</option>
-							<option value="Nhà nguyên căn">Nhà nguyên căn</option>
-							<option value="Cho thuê căn hộ">Cho thuê căn hộ</option>
-							<option value="Tìm người ở ghép">Tìm người ở ghép</option>
-						</select>
-						<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
-						<select id="districtSelect" onchange="updateWards()" style="width:150px; height:50px; border:0">
-							<option value="">Quận, huyện</option>
-							<option value="Hải Châu">Hải Châu</option>
-							<option value="Thanh Khê">Thanh Khê</option>
-							<option value="Sơn Trà">Sơn Trà</option>
-							<option value="Cẩm Lệ">Cẩm Lệ</option>
-							<option value="Liên Chiểu">Liên Chiểu</option>
-							<option value="Ngũ Hành Sơn">Ngũ Hành Sơn</option>
-							<option value="Hoà Vang">Hoà Vang</option>
-							<option value="Hoàng Sa">Hoàng Sa</option>
-						</select>
-						<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+					<form action="" method="GET">
+						<div class="select-search">
+							<select id="type" name="propertyType" style="width:150px; height:50px; border:0; padding-left: 5px">
+								<option value="">Loại phòng</option>
+								<?php while ($row = $propertyTypesResult->fetch(PDO::FETCH_ASSOC)) { ?>
+									<option value="<?php echo $row['type_id']; ?>"><?php echo $row['type_name']; ?></option>
+								<?php } ?>
+							</select>
+							<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+							<select id="districtSelect" name="district" style="width:150px; height:50px; border:0">
+								<option value="">Quận, huyện</option>
+								<option value="Hải Châu">Hải Châu</option>
+								<option value="Thanh Khê">Thanh Khê</option>
+								<option value="Sơn Trà">Sơn Trà</option>
+								<option value="Cẩm Lệ">Cẩm Lệ</option>
+								<option value="Liên Chiểu">Liên Chiểu</option>
+								<option value="Ngũ Hành Sơn">Ngũ Hành Sơn</option>
+								<option value="Hoà Vang">Hoà Vang</option>
+								<option value="Hoàng Sa">Hoàng Sa</option>
+							</select>
+							<!-- <div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
 						<select id="wardSelect" style="width:150px; height:50px; border:0">
 							<option value="">Phường, xã</option>
-						</select>
-						<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
-						<select id="prix" style="width:150px; height:50px; border:0">
-							<option value="">Mức giá</option>
-							<option value="Thoả thuận">Thoả thuận</option>
-							<option value="Dưới 1 triệu">Dưới 1 triệu</option>
-							<option value="1 - 2 triệu">1 - 2 triệu</option>
-							<option value="2 - 3 triệu">2 - 3 triệu</option>
-							<option value="3 - 5 triệu">3 - 5 triệu</option>
-							<option value="5 - 7 triệu">5 - 7 triệu</option>
-							<option value="7 - 10 triệu">7 - 10 triệu</option>
-							<option value="10 - 15 triệu">10 - 15 triệu</option>
-							<option value="Trên 15 triệu">Trên 15 triệu</option>
-						</select>
-						<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
-						<select id="zone" style="width:150px; height:50px; border:0">
-							<option value="">Diện tích</option>
-							<option value="Dưới 20m2">Dưới 20m2</option>
-							<option value="Từ 20 - 30m2">Từ 20 - 30m2</option>
-							<option value="Từ 30 - 50m2">Từ 30 - 50m2</option>
-							<option value="Từ 50 - 70m2">Từ 50 - 70m2</option>
-							<option value="Từ 70 - 90m2">Từ 70 - 90m2</option>
-							<option value="Trên 90m2">Trên 90m2</option>
-						</select>
-						<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
-						<!-- <button type="button" style="display:flex; height:35px; align-items: center; border-radius: 10px; border:0; background-color: #00966a; color: #fff;">Tìm kiếm</button> -->
-						<!-- <img src="public/img/btn-search.svg" id="icon-search" style=" width: 20px; height: 20px;">-->
+						</select> -->
+							<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+							<select id="prix" name="price" style="width:150px; height:50px; border:0">
+								<option value="">Mức giá</option>
+								<option value="1000000">Dưới 1 triệu</option>
+								<option value="2000000">1 triệu - 2 triệu</option>
+								<option value="3000000">2 triệu - 3 triệu</option>
+								<option value="5000000">3 triệu - 5 triệu</option>
+								<option value="7000000">5 triệu - 7 triệu</option>
+								<option value="10000000">7 triệu - 10 triệu</option>
+								<option value="15000000">10 triệu - 15 triệu</option>
+								<option value="15000001">Trên 15 triệu</option>
+							</select>
+							<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+							<select id="zone" name="area" style="width:150px; height:50px; border:0">
+								<option value="">Diện tích</option>
+								<option value="20">Dưới 20m2</option>
+								<option value="30">Từ 20 - 30m2</option>
+								<option value="50">Từ 30 - 50m2</option>
+								<option value="70">Từ 50 - 70m2</option>
+								<option value="100">Từ 70 - 100m2</option>
+								<option value="101">Trên 100m2</option>
+							</select>
+							<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
 
-						<button class="btn search-btn" type="submit" value="submit"><i class="fa fa-search-location"></i> Tìm kiếm</button>
-						<!-- <div class="col-lg-2 col-md-3 col-sm-12 small-padd" style="display: flex;">
-						</div> -->
-					</div>
+							<button class="btn search-btn" type="submit" value="submit"><i class="fa fa-search-location"></i> Tìm kiếm</button>
+						</div>
+					</form>
 				</div>
 
 			</div>
@@ -126,11 +122,6 @@
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Hải Châu</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
 								</div>
 							</div>
 
@@ -144,11 +135,6 @@
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Thanh Khê</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
 								</div>
 							</div>
 
@@ -163,11 +149,6 @@
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Sơn Trà</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
 								</div>
 							</div>
 							<div class="img-wrap-background" style="background-image: url(public/img/SonTra.jpg);"></div>
@@ -181,11 +162,6 @@
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Ngũ Hành Sơn</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
 								</div>
 							</div>
 
@@ -201,11 +177,6 @@
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Liên Chiểu</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
 								</div>
 							</div>
 							<div class="img-wrap-background" style="background-image: url(public/img/LienChieu.jpg);"></div>
@@ -219,11 +190,6 @@
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Hòa Vang</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
 								</div>
 							</div>
 							<div class="img-wrap-background" style="background-image: url(public/img/HoaVang.jpg);"></div>
@@ -236,11 +202,6 @@
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Cẩm Lệ</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
 								</div>
 							</div>
 							<div class="img-wrap-background" style="background-image: url(public/img/CamLe1.jpg);"></div>
@@ -253,11 +214,6 @@
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Hoàng Sa</h4>
-									<!-- <ul>
-										<li><span>12 Villas</span></li>
-										<li><span>10 Apartments</span></li>
-										<li><span>07 Offices</span></li>
-									</ul> -->
 								</div>
 							</div>
 							<div class="img-wrap-background" style="background-image: url(public/img/HoangSa.jpg);"></div>
@@ -306,7 +262,6 @@
 										<div class="listing-short-detail-wrap">
 											<div class="_card_list_flex mb-2">
 												<div class="_card_flex_01">
-													<!-- <span class="_list_blickes _netork">VIP</span> -->
 													<span class="_list_blickes types"><?php echo $row['type_name']; ?></span>
 													<span class="property-type elt_rent"><?php echo $row['age']; ?></span>
 												</div>
@@ -319,8 +274,8 @@
 													<h4 class="listing-name verified"><a href="?controller=RentRoom&action=single&property_id=<?php echo $row['property_id']; ?>" class="prt-link-detail">
 															<?php
 															$property_name = $row['property_name'];
-															if (strlen($property_name) > 80) {
-																$property_name = substr($property_name, 0, 77) . '...';
+															if (strlen($property_name) > 100) {
+																$property_name = substr($property_name, 0, 97) . '...';
 															}
 															echo htmlentities($property_name);
 															?>

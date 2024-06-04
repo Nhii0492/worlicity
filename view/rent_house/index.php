@@ -48,36 +48,8 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                             <div class="shorting_pagination_laft">
                                 <h4>Nhà nguyên căn cho thuê</h4>
                             </div>
-                            <!-- <div class="shorting_pagination_right">
-                                <ul>
-                                    <li><a href="javascript:void(0);" class="active">1</a></li>
-                                    <li><a href="javascript:void(0);">2</a></li>
-                                    <li><a href="javascript:void(0);">3</a></li>
-                                    <li><a href="javascript:void(0);">4</a></li>
-                                    <li><a href="javascript:void(0);">5</a></li>
-                                    <li><a href="javascript:void(0);">6</a></li>
-                                </ul>
-                            </div> -->
                         </div>
                     </div>
-
-                    <!-- <div class="col-lg-3 col-md-6 col-sm-12 order-lg-3 order-md-2 col-sm-6">
-                        <div class="shorting-right">
-                            <label>Short By:</label>
-                            <div class="dropdown show">
-                                <a class="btn btn-filter dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="selection">Most Rated</span>
-                                </a>
-                                <div class="drp-select dropdown-menu">
-                                    <a class="dropdown-item" href="JavaScript:Void(0);">Most Rated</a>
-                                    <a class="dropdown-item" href="JavaScript:Void(0);">Most Viewd</a>
-                                    <a class="dropdown-item" href="JavaScript:Void(0);">News Listings</a>
-                                    <a class="dropdown-item" href="JavaScript:Void(0);">High Rated</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
                 </div>
             </div>
         </div>
@@ -103,7 +75,7 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                 <div class="form-group">
                                     <div class="simple-input">
                                         <select id="district" name="district" class="form-control">
-                                            <option value="">Quận, huyện</option>
+                                            <option hidden value="">Quận, huyện</option>
                                             <option value="Hải Châu">Hải Châu</option>
                                             <option value="Thanh Khê">Thanh Khê</option>
                                             <option value="Sơn Trà">Sơn Trà</option>
@@ -130,12 +102,15 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                 <div class="form-group">
                                     <div class="simple-input">
                                         <select id="price" name="price" class="form-control">
-                                            <option value="">Khoảng giá</option>
-                                            <option value="2000000">dưới 2 triệu</option>
-                                            <option value="3000000">2 triệu -> 3 triệu</option>
-                                            <option value="4000000">3 triệu -> 4 triệu</option>
-                                            <option value="5000000">4 triệu -> 5 triệu</option>
-                                            <option value="">Khác</option>
+                                            <option hidden value="">Mức giá</option>
+                                            <option value="1000000">Dưới 1 triệu</option>
+                                            <option value="2000000">1 triệu - 2 triệu</option>
+                                            <option value="3000000">2 triệu - 3 triệu</option>
+                                            <option value="5000000">3 triệu - 5 triệu</option>
+                                            <option value="7000000">5 triệu - 7 triệu</option>
+                                            <option value="10000000">7 triệu - 10 triệu</option>
+                                            <option value="15000000">10 triệu - 15 triệu</option>
+                                            <option value="15000001">Trên 15 triệu</option>
                                         </select>
                                     </div>
                                 </div>
@@ -143,7 +118,7 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                 <div class="form-group">
                                     <div class="simple-input">
                                         <select id="bedrooms" name="bedroom" class="form-control">
-                                            <option value="">Phòng ngủ</option>
+                                            <option hidden value="">Phòng ngủ</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -156,7 +131,7 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                 <div class="form-group">
                                     <div class="simple-input">
                                         <select id="bathrooms" name="bathroom" class="form-control">
-                                            <option value="">Phòng tắm</option>
+                                            <option hidden value="">Phòng tắm</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -165,41 +140,6 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                         </select>
                                     </div>
                                 </div>
-
-                                <div class="form-group">
-                                    <div class="simple-input">
-                                        <select id="built" name="age" class="form-control">
-                                            <option value="">Năm xây dựng</option>
-                                            <option value="2016">2016</option>
-                                            <option value="2017">2017</option>
-                                            <option value="2018">2018</option>
-                                            <option value="2019">2019</option>
-                                            <option value="2020">2020</option>
-                                            <option value="2021">2021</option>
-                                            <option value="2022">2022</option>
-                                            <option value="2023">2023</option>
-                                            <option value="2024">2024</option>
-                                            <option value="">Khác</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <div class="simple-input">
-                                                <input type="text" name="min_area" class="form-control" placeholder="Nhỏ nhất">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <div class="simple-input">
-                                                <input type="text" name="max_area" class="form-control" placeholder="Lớn nhất">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
 
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 pt-4">
@@ -211,7 +151,6 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                                     <label for="utilities-<?php echo $row['utility_id']; ?>" class="checkbox-custom-label"><?php echo $row['utility_name']; ?></label>
                                                 </li>
                                             <?php } ?>
-
                                         </ul>
                                     </div>
                                 </div>
@@ -223,8 +162,8 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                 </div>
 
                             </div>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
 

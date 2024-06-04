@@ -10,7 +10,7 @@ class ModelHome extends Mastermodel
         $this->db = $db;
     }
 
-    public function getProperties($keyword, $district, $propertyType, $utilities)
+    public function getProperties($district, $propertyType, $price, $area)
     {
         $query = "SELECT DISTINCT p.*, pt.type_name, bd.bedroom_count, ba.bathroom_count, l.district, pi.image_url, p.view_count
         FROM properties p
@@ -27,12 +27,13 @@ class ModelHome extends Mastermodel
             GROUP BY property_id
         ) pi ON p.property_id = pi.property_id";
 
+
         $conditions = array();
         $params = array();
 
-        if (!empty($keyword)) {
-            $conditions[] = "p.property_name LIKE ?";
-            $params[] = "%$keyword%";
+        if (!empty($propertyType)) {
+            $conditions[] = "p.type_id = ?";
+            $params[] = $propertyType;
         }
 
         if (!empty($district)) {
@@ -40,18 +41,56 @@ class ModelHome extends Mastermodel
             $params[] = $district;
         }
 
-        if (!empty($propertyType)) {
-            $conditions[] = "p.type_id = ?";
-            $params[] = $propertyType;
+        if (!empty($price)) {
+            switch ($price) {
+                case '1000000':
+                    $conditions[] = "p.price < 1000000";
+                    break;
+                case '2000000':
+                    $conditions[] = "p.price BETWEEN 1000000 AND 2000000";
+                    break;
+                case '3000000':
+                    $conditions[] = "p.price BETWEEN 2000000 AND 3000000";
+                    break;
+                case '5000000':
+                    $conditions[] = "p.price BETWEEN 3000000 AND 5000000";
+                    break;
+                case '7000000':
+                    $conditions[] = "p.price BETWEEN 5000000 AND 7000000";
+                    break;
+                case '10000000':
+                    $conditions[] = "p.price BETWEEN 7000000 AND 10000000";
+                    break;
+                case '15000000':
+                    $conditions[] = "p.price BETWEEN 10000000 AND 15000000";
+                    break;
+                case '15000001':
+                    $conditions[] = "p.price > 15000000";
+                    break;
+            }
         }
 
-        if (!empty($utilities)) {
-            $utilityConditions = array();
-            foreach ($utilities as $utility) {
-                $utilityConditions[] = "pu.utility_id = ?";
-                $params[] = $utility;
+        if (!empty($area)) {
+            switch ($area) {
+                case '20':
+                    $conditions[] = "p.real_area < 20";
+                    break;
+                case '30':
+                    $conditions[] = "p.real_area BETWEEN 20 AND 30";
+                    break;
+                case '50':
+                    $conditions[] = "p.real_area BETWEEN 30 AND 50";
+                    break;
+                case '70':
+                    $conditions[] = "p.real_area BETWEEN 50 AND 70";
+                    break;
+                case '100':
+                    $conditions[] = "p.real_area BETWEEN 70 AND 100";
+                    break;
+                case '101':
+                    $conditions[] = "p.real_area > 100";
+                    break;
             }
-            $conditions[] = "(" . implode(" OR ", $utilityConditions) . ")";
         }
 
         if (!empty($conditions)) {
@@ -107,7 +146,7 @@ class ModelHome extends Mastermodel
         return $result;
     }
 
-    public function rentRoomProperties($keyword, $district, $propertyType, $price, $bedroom, $bathroom, $minArea, $maxArea, $utilities)
+    public function rentRoomProperties($keyword, $district, $propertyType, $price, $bedroom, $bathroom, $utilities)
     {
         $query = "SELECT DISTINCT p.*, pt.type_name, bd.bedroom_count, ba.bathroom_count, l.district, pi.image_url, p.view_count
             FROM properties p
@@ -145,20 +184,52 @@ class ModelHome extends Mastermodel
 
         if (!empty($price)) {
             switch ($price) {
-                case '500000000':
-                    $conditions[] = "p.price < 500000000";
+                case '1000000':
+                    $conditions[] = "p.price < 1000000";
                     break;
-                case '1000000000':
-                    $conditions[] = "p.price BETWEEN 500000000 AND 1000000000";
+                case '2000000':
+                    $conditions[] = "p.price BETWEEN 1000000 AND 2000000";
                     break;
-                case '2000000000':
-                    $conditions[] = "p.price BETWEEN 1000000000 AND 2000000000";
+                case '3000000':
+                    $conditions[] = "p.price BETWEEN 2000000 AND 3000000";
                     break;
-                case '5000000000':
-                    $conditions[] = "p.price BETWEEN 2000000000 AND 5000000000";
+                case '5000000':
+                    $conditions[] = "p.price BETWEEN 3000000 AND 5000000";
                     break;
-                case '5000000001':
-                    $conditions[] = "p.price > 5000000000";
+                case '7000000':
+                    $conditions[] = "p.price BETWEEN 5000000 AND 7000000";
+                    break;
+                case '10000000':
+                    $conditions[] = "p.price BETWEEN 7000000 AND 10000000";
+                    break;
+                case '15000000':
+                    $conditions[] = "p.price BETWEEN 10000000 AND 15000000";
+                    break;
+                case '15000001':
+                    $conditions[] = "p.price > 15000000";
+                    break;
+            }
+        }
+
+        if (!empty($area)) {
+            switch ($area) {
+                case '20':
+                    $conditions[] = "p.real_area < 20";
+                    break;
+                case '30':
+                    $conditions[] = "p.real_area BETWEEN 20 AND 30";
+                    break;
+                case '50':
+                    $conditions[] = "p.real_area BETWEEN 30 AND 50";
+                    break;
+                case '70':
+                    $conditions[] = "p.real_area BETWEEN 50 AND 70";
+                    break;
+                case '100':
+                    $conditions[] = "p.real_area BETWEEN 70 AND 100";
+                    break;
+                case '101':
+                    $conditions[] = "p.real_area > 100";
                     break;
             }
         }
@@ -171,18 +242,6 @@ class ModelHome extends Mastermodel
         if (!empty($bathroom)) {
             $conditions[] = "ba.bathroom_count = ?";
             $params[] = $bathroom;
-        }
-
-        if (!empty($minArea) || !empty($maxArea)) {
-            if (empty($minArea)) {
-                $minArea = 0;
-            }
-            if (empty($maxArea)) {
-                $maxArea = 9999999999;
-            }
-            $conditions[] = "p.real_area BETWEEN ? AND ?";
-            $params[] = $minArea;
-            $params[] = $maxArea;
         }
 
         if (!empty($utilities)) {

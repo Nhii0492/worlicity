@@ -67,7 +67,7 @@
 		<div class="row">
 
 			<!-- property main detail -->
-			<div class="col-lg-8 col-md-12 col-sm-12">
+			<div class="col-lg-12 col-md-12 col-sm-12">
 
 				<div class="property_info_detail_wrap mb-4">
 
@@ -215,7 +215,7 @@
 			<!-- Similar Property -->
 			<div class="sidebar-widgets">
 
-				<h4>Gợi ý bất động sản cho bạn</h4>
+				<h4>Gợi ý phòng ở ghép cho bạn</h4>
 
 				<div class="sidebar_featured_property">
 

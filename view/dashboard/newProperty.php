@@ -29,14 +29,14 @@
                             <div class="col-lg-12 col-md-12">
 
                                 <div class="submit-page">
-                                    <form action="controller/resultNews.php" method="POST" enctype="multipart/form-data">
+                                    <form action="controller/ResultNews.php" method="POST" enctype="multipart/form-data">
                                         <!-- Basic Information -->
                                         <div class="frm_submit_block">
                                             <h3>Thông tin cơ bản</h3>
                                             <div class="frm_submit_wrap">
                                                 <div class="form-row">
                                                     <div class="form-group col-md-12">
-                                                        <label>Tiêu đề bài đăng<a href="#" class="tip-topdata" data-tip="Property Title"><i class="ti-help"></i></a></label>
+                                                        <label>Tiêu đề bài đăng<a href="#" class="tip-topdata" data-tip="Mô tả ngắn gọn về nội dung của bài đăng"><i class="ti-help"></i></a></label>
                                                         <input type="text" name="title" class="form-control">
                                                     </div>
                                                 </div>

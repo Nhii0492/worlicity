@@ -215,7 +215,7 @@
 			<!-- Similar Property -->
 			<div class="sidebar-widgets">
 
-				<h4>Gợi ý bất động sản cho bạn</h4>
+				<h4>Gợi ý nhà nguyên căn cho bạn</h4>
 
 				<div class="sidebar_featured_property">
 
@@ -230,8 +230,8 @@
 										<?php
 										$property_name = $property['property_name'];
 
-										if (strlen($property_name) > 70) {
-											$property_name = substr($property_name, 0, 65) . '...';
+										if (strlen($property_name) > 105) {
+											$property_name = substr($property_name, 0, 102) . '...';
 										}
 
 										echo htmlentities($property_name);

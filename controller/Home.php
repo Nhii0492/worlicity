@@ -14,13 +14,12 @@ class HomeController
 
     public function index()
     {
-        $keyword = isset($_GET['keyword']) ? $_GET['keyword'] : null;
-        $city = isset($_GET['city']) ? $_GET['city'] : null;
+        $district = isset($_GET['district']) ? $_GET['district'] : null;
         $propertyType = isset($_GET['propertyType']) ? $_GET['propertyType'] : null;
-        $utilities = isset($_GET['utilities']) ? $_GET['utilities'] : array();
+        $price = isset($_GET['price']) ? $_GET['price'] : null;
+        $area = isset($_GET['area']) ? $_GET['area'] : null;
 
-
-        $result = $this->model->getProperties($keyword, $city, $propertyType, $utilities);
+        $result = $this->model->getProperties($district, $propertyType, $price, $area);
         foreach ($result as $key => $row) {
             $result[$key]['formatted_price'] = $this->formatPrice($row['price']);
         }

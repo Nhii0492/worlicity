@@ -1,4 +1,3 @@
-
 <!-- ============================ Page Title Start================================== -->
 <div class="page-title" style="background:#f4f4f4 url(public/img/slider.jpg);" data-overlay="5">
     <div class="container">
@@ -14,7 +13,7 @@
 <section class="pt-0">
     <div class="container">
         <div class="row align-items-center pretio_top">
-            
+
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="contact-box">
                     <i class="ti-shopping-cart theme-cl"></i>
@@ -23,7 +22,7 @@
                     <span>+01 215 245 6258</span>
                 </div>
             </div>
-            
+
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="contact-box">
                     <i class="ti-user theme-cl"></i>
@@ -32,7 +31,7 @@
                     <span>+01 215 245 6258</span>
                 </div>
             </div>
-            
+
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="contact-box">
                     <i class="ti-comment-alt theme-cl"></i>
@@ -41,18 +40,18 @@
                     <span class="live-chat">Live Chat</span>
                 </div>
             </div>
-            
+
         </div>
-        
+
         <!-- row Start -->
         <div class="row">
             <div class="col-lg-8 col-md-7">
                 <div class="property_block_wrap">
-                    
+
                     <div class="property_block_wrap_header">
                         <h4 class="property_block_title">Fillup The Form</h4>
                     </div>
-                    
+
                     <div class="block-body">
                         <div class="row">
                             <div class="col-lg-6 col-md-12">
@@ -68,39 +67,38 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label>Subject</label>
                             <input type="text" class="form-control simple">
                         </div>
-                        
+
                         <div class="form-group">
                             <label>Message</label>
                             <textarea class="form-control simple"></textarea>
                         </div>
-                        
+
                         <div class="form-group">
                             <button class="btn btn-theme" type="submit">Submit Request</button>
                         </div>
                     </div>
-                    
+
                 </div>
-                                
             </div>
-            
+
             <div class="col-lg-4 col-md-5">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62719.35701607296!2d106.6871424762972!3d10.737580738513415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752560b050b093%3A0x6dcb89c51055ccc9!2zUXXhuq1uIDcsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1683802051826!5m2!1svi!2s" width="100%" height="488" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-        <!-- /row -->		
-    </div>	
+        <!-- /row -->
+    </div>
 </section>
 <!-- ============================ Agency List End ================================== -->
 
 <!-- ============================ Our Partner Start ================================== -->
 <section class="gray-simple">
     <div class="container">
-        
+
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10 col-sm-12">
                 <div class="reio_o9i text-center mb-5">
@@ -109,7 +107,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row justify-content-center">
             <div class="col-lg-9 col-md-10 col-sm-12 flex-wrap justify-content-center text-center">
                 <div class="pertner_flexio">
@@ -142,7 +140,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 </section>
 <!-- ============================ Our Partner End ================================== -->
