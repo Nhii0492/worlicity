@@ -1,10 +1,10 @@
 # Worlicity - Website tìm kiếm phòng trọ, nhà trọ, căn hộ,... tại thành phố Đà Nẵng
 
-**Sản phẩm phục vụ cho Đồ án Công nghệ phần mềm, lớp 20PFIEV3**
+## **Sản phẩm phục vụ cho Đồ án Công nghệ phần mềm, lớp 20PFIEV3**
 
 **Lecturer:** _TS. Lê Thị Mỹ Hạnh_
 
-**Student:**
+**Students:**
 
 - _Trần Thành Nhân_
 
