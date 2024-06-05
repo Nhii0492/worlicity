@@ -229,7 +229,7 @@ $utilitiesResult = $conn->query($utilitiesQuery);
                                                 </div>
                                             </div>
                                             <div class="footer-flex">
-                                                <a href="?controller=RentRoom&action=single&property_id=<?php echo $row['property_id']; ?>" class="prt-view">View Detail</a>
+                                                <a href="?controller=RentRoom&action=single&property_id=<?php echo $row['property_id']; ?>" class="prt-view">Xem chi tiết</a>
                                             </div>
                                         </div>
                                     </div>
