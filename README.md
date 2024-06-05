@@ -2,12 +2,14 @@
 
 **Sản phẩm phục vụ cho Đồ án Công nghệ phần mềm, lớp 20PFIEV3**
 
-**_ Author: _**
+**Lecturer:** _TS. Lê Thị Mỹ Hạnh_
 
-- ~~Trần Thành Nhân~~
+**Student:**
 
-- ~~Lê Trần Hương Giang~~
+- _Trần Thành Nhân_
 
-- ~~Nguyễn Thục Nhi~~
+- _Lê Trần Hương Giang_
 
-- ~~Đỗ Minh Huy~~
+- _Nguyễn Thục Nhi_
+
+- _Đỗ Minh Huy_
