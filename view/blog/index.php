@@ -46,7 +46,7 @@
                             <h4 class="bl-title"><a href="index.php?controller=Blog&action=blog&newsId=<?php echo $news['news_id']; ?>">
                                     <?php
                                     $news_name = $news['title'];
-                                    if (strlen($news_name) > 80) {
+                                    if (strlen($news_name) > 50) {
                                         $news_name = substr($news_name, 0, 77) . '...';
                                     }
                                     echo htmlentities($news_name);

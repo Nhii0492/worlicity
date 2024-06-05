@@ -319,14 +319,14 @@ require_once "model/Property.php";
 								<div class="footer_widget">
 									<h4 class="widget_title">Khu vực</h4>
 									<ul class="footer-menu">
-										<li><a href="#">Thanh Khê</a></li>
-										<li><a href="#">Hải Châu</a></li>
-										<li><a href="#">Liên Chiểu</a></li>
-										<li><a href="#">Cẩm Lệ</a></li>
-										<li><a href="#">Sơn Trà</a></li>
-										<li style="width:150px"><a href="#">Ngũ Hành Sơn <span class="update">Up</span></a></li>
-										<li><a href="#">Hoà Vang</a></li>
-										<li><a href="#">Hoàng Sa</a></li>
+										<li><a href="index.php?controller=RentRoom&action=thanhkhe">Thanh Khê</a></li>
+										<li><a href="index.php?controller=RentRoom&action=haichau">Hải Châu</a></li>
+										<li><a href="index.php?controller=RentRoom&action=lienchieu">Liên Chiểu</a></li>
+										<li><a href="index.php?controller=RentRoom&action=camle">Cẩm Lệ</a></li>
+										<li><a href="index.php?controller=RentRoom&action=sontra">Sơn Trà</a></li>
+										<li style="width:150px"><a href="index.php?controller=RentRoom&action=nguhanhson">Ngũ Hành Sơn <span class="update">Up</span></a></li>
+										<li><a href="index.php?controller=RentRoom&action=hoavang">Hoà Vang</a></li>
+										<li><a href="index.php?controller=RentRoom&action=hoangsa">Hoàng Sa</a></li>
 									</ul>
 								</div>
 							</div>

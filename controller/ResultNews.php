@@ -41,8 +41,11 @@ if (isset($_POST['submit'])) {
 
     // Kiểm tra và hiển thị thông báo thành công hoặc lỗi
     if ($result) {
-        echo "Thêm bài viết thành công!";
+        $_SESSION['message'] = "Thêm bài viết thành công!";
     } else {
-        echo "Thêm bài viết thất bại!";
+        $_SESSION['message'] = "Thêm bài viết thất bại!";
     }
+
+    header("Location: ../index.php?controller=DashBoard&action=saveProperty");
+    exit();
 }

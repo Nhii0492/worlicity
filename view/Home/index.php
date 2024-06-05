@@ -52,16 +52,16 @@
 				</div>
 
 
-				<div class="search" style=" display: flex;justify-content: space-around;align-items: center;">
-					<form action="" method="GET">
-						<div class="select-search">
+				<div class="search" style="height:60px; display: flex;justify-content: space-around;align-items: center; ">
+					<form action="" method="GET" style="background-color:#fff; border-radius:5px;">
+						<div class="select-search" style="height:75px; display: flex;     align-items: center;">
 							<select id="type" name="propertyType" style="width:150px; height:50px; border:0; padding-left: 5px">
 								<option value="">Loại phòng</option>
 								<?php while ($row = $propertyTypesResult->fetch(PDO::FETCH_ASSOC)) { ?>
 									<option value="<?php echo $row['type_id']; ?>"><?php echo $row['type_name']; ?></option>
 								<?php } ?>
 							</select>
-							<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+							<div class="line" style="height:50px;border:1px solid #CBC4C4; margin: 0px 5px;"></div>
 							<select id="districtSelect" name="district" style="width:150px; height:50px; border:0">
 								<option value="">Quận, huyện</option>
 								<option value="Hải Châu">Hải Châu</option>
@@ -73,11 +73,11 @@
 								<option value="Hoà Vang">Hoà Vang</option>
 								<option value="Hoàng Sa">Hoàng Sa</option>
 							</select>
-							<!-- <div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
-						<select id="wardSelect" style="width:150px; height:50px; border:0">
-							<option value="">Phường, xã</option>
-						</select> -->
-							<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+								<!-- <div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+							<select id="wardSelect" style="width:150px; height:50px; border:0">
+								<option value="">Phường, xã</option>
+							</select> -->
+							<div class="line" style="height:50px;border:1px solid #CBC4C4; margin: 0px 5px;"></div>
 							<select id="prix" name="price" style="width:150px; height:50px; border:0">
 								<option value="">Mức giá</option>
 								<option value="1000000">Dưới 1 triệu</option>
@@ -89,7 +89,7 @@
 								<option value="15000000">10 triệu - 15 triệu</option>
 								<option value="15000001">Trên 15 triệu</option>
 							</select>
-							<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+							<div class="line" style="height:50px;border:1px solid #CBC4C4; margin: 0px 5px;"></div>
 							<select id="zone" name="area" style="width:150px; height:50px; border:0">
 								<option value="">Diện tích</option>
 								<option value="20">Dưới 20m2</option>
@@ -99,9 +99,9 @@
 								<option value="100">Từ 70 - 100m2</option>
 								<option value="101">Trên 100m2</option>
 							</select>
-							<div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+							<div class="line" style="height:50px;border:1px solid #CBC4C4; margin: 0px 5px;"></div>
 
-							<button class="btn search-btn" type="submit" value="submit"><i class="fa fa-search-location"></i> Tìm kiếm</button>
+							<button class="btn search-btn" type="submit" value="submit" style="width:120px; height:50px; margin: 10px"><i class="fa fa-search-location"></i> Tìm kiếm</button>
 						</div>
 					</form>
 				</div>
@@ -169,8 +169,7 @@
 
 						</a>
 					</div>
-					<!-- </div>
-				<div class="row justify-content-center"> -->
+					
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
 						<a href="index.php?controller=RentRoom&action=lienchieu" class="img-wrap style-2">
@@ -242,7 +241,7 @@
 
 				<div id="property_list" class="row justify-content-center">
 
-					<!--đặt đoạn mã PHP xử lý truy vấn ở một file riêng và include vào đây -->
+					
 					<?php foreach ($result as $row) { ?>
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
 							<div class="property-listing list_view">
@@ -327,123 +326,13 @@
 					<!-- End Single Property -->
 				</div>
 
-				<!-- Load more -->
-				<!-- <div class="row">
-					<div id="property_placeholder"></div>
-						<div class="col-lg-12 col-md-12 col-sm-12 text-center">
-
-							<button id="load_more" name="load_more" value="Load more" onclick="load_ajax()" class="btn btn-theme-light-2 rounded">Xem thêm</button>
-						</div>
-					</div> -->
+				
 				<script src="public/js/search.js"></script>
 			</div>
 		</section>
 		<!-- ============================ Latest Property For Sale End ================================== -->
 
 
-
-
-
-		<!-- ============================ Price Table Start ================================== -->
-		<!-- <section class="min">
-			<div class="container">
-
-				<div class="row justify-content-center">
-					<div class="col-lg-7 col-md-10 text-center">
-						<div class="sec-heading center">
-							<h2>Select your Package</h2>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row align-items-center"> -->
-
-		<!-- Single Package -->
-		<!-- <div class="col-lg-3 col-md-3">
-						<div class="pricing_wrap">
-							<div class="prt_head">
-								<h4>Gói tiêu chuẩn</h4>
-							</div>
-							<div class="prt_price">
-								<h2><span>VND</span>230k</h2>
-								<span>mỗi người dùng/năm</span>
-							</div>
-							<div class="prt_body">
-								<ul>
-									<li>10 danh sách</li>
-									<li>2 tài sản nổi bật</li>
-									<li>2 hình ảnh/mỗi danh sách</li>
-									<li>Trợ giúp và hỗ trợ</li>
-									<li class="none">Ưu tiên đề xuất</li>
-									<li class="none">Quảng cáo</li>
-								</ul>
-							</div>
-							<div class="prt_footer">
-								<a href="#" class="btn choose_package">Mua gói</a>
-							</div>
-						</div>
-					</div> -->
-
-		<!-- Single Package -->
-		<!-- <div class="col-lg-3 col-md-3">
-						<div class="pricing_wrap">
-							<div class="prt_head">
-								<div class="recommended">Gói tốt nhất</div>
-								<h4>Gói vàng</h4>
-							</div>
-							<div class="prt_price">
-								<h2><span>VND</span>1100k</h2>
-								<span>mỗi người dùng/năm</span>
-							</div>
-							<div class="prt_body">
-								<ul>
-									<li>20 danh sách</li>
-									<li>5 tài sản nổi bật</li>
-									<li>5 hình ảnh/mỗi danh sách</li>
-									<li>Trợ giúp và hỗ trợ</li>
-									<li>Ưu tiên đề xuất</li>
-									<li class="none">Quảng cáo</li>
-								</ul>
-							</div>
-							<div class="prt_footer">
-								<a href="#" class="btn choose_package active">Mua gói</a>
-							</div>
-						</div>
-					</div> -->
-
-		<!-- Single Package -->
-		<!-- <div class="col-lg-3 col-md-3">
-						<div class="pricing_wrap">
-							<div class="prt_head">
-								<h4>Gói cao cấp</h4>
-							</div>
-							<div class="prt_price">
-								<h2><span>VND</span>1790k</h2>
-								<span>2 người dùng/năm</span>
-							</div>
-							<div class="prt_body">
-								<ul>
-									<li>Danh sách không giới hạn</li>
-									<li>50 tài sản nổi bật</li>
-									<li>Hình ảnh không giới hạn</li>
-									<li>Trợ giúp và hỗ trợ</li>
-									<li>Ưu tiên đề xuất</li>
-									<li>Quảng cáo</li>
-								</ul>
-							</div>
-							<div class="prt_footer">
-								<a href="#" class="btn choose_package">Mua gói</a>
-							</div>
-						</div>
-					</div> -->
-
-		<!-- </div>
-
-			</div>
-		
-		</section> -->
-		<!-- ============================ Price Table End ================================== -->
 
 		<!-- ============================ Footer Start ================================== -->
 
