@@ -1,13 +1,13 @@
 # Worlicity - Website tìm kiếm phòng trọ, nhà trọ, căn hộ,... tại thành phố Đà Nẵng
 
-## Sản phẩm phục vụ cho Đồ án Công nghệ phần mềm, lớp 20PFIEV3
+**Sản phẩm phục vụ cho Đồ án Công nghệ phần mềm, lớp 20PFIEV3**
 
-### Author:
+**_ Author: _**
 
-- Trần Thành Nhân
+- ~~Trần Thành Nhân~~
 
-- Lê Trần Hương Giang
+- ~~Lê Trần Hương Giang~~
 
-- Nguyễn Thục Nhi
+- ~~Nguyễn Thục Nhi~~
 
-- Đỗ Minh Huy
+- ~~Đỗ Minh Huy~~
