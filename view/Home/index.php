@@ -73,7 +73,7 @@
 								<option value="Hoà Vang">Hoà Vang</option>
 								<option value="Hoàng Sa">Hoàng Sa</option>
 							</select>
-								<!-- <div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
+							<!-- <div class="line" style="height:50px;border:1px solid #CBC4C4"></div>
 							<select id="wardSelect" style="width:150px; height:50px; border:0">
 								<option value="">Phường, xã</option>
 							</select> -->
@@ -101,7 +101,7 @@
 							</select>
 							<div class="line" style="height:50px;border:1px solid #CBC4C4; margin: 0px 5px;"></div>
 
-							<button class="btn search-btn" type="submit" value="submit" style="width:120px; height:50px; margin: 10px"><i class="fa fa-search-location"></i> Tìm kiếm</button>
+							<button class="btn search-btn" type="submit" value="submit" style="width:150px; height:50px; margin: 10px"><i class="fa fa-search-location"></i> Tìm kiếm</button>
 						</div>
 					</form>
 				</div>
@@ -118,7 +118,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="index.php?controller=RentRoom&action=haichau" class="img-wrap style-2">
+						<a href="index.php?controller=RentProperty&action=haichau" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Hải Châu</h4>
@@ -131,7 +131,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="index.php?controller=RentRoom&action=thanhkhe" class="img-wrap style-2">
+						<a href="index.php?controller=RentProperty&action=thanhkhe" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Thanh Khê</h4>
@@ -145,7 +145,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="index.php?controller=RentRoom&action=sontra" class="img-wrap style-2">
+						<a href="index.php?controller=RentProperty&action=sontra" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Sơn Trà</h4>
@@ -158,7 +158,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="index.php?controller=RentRoom&action=nguhanhson" class="img-wrap style-2">
+						<a href="index.php?controller=RentProperty&action=nguhanhson" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Ngũ Hành Sơn</h4>
@@ -169,10 +169,10 @@
 
 						</a>
 					</div>
-					
+
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="index.php?controller=RentRoom&action=lienchieu" class="img-wrap style-2">
+						<a href="index.php?controller=RentProperty&action=lienchieu" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Liên Chiểu</h4>
@@ -185,7 +185,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="index.php?controller=RentRoom&action=hoavang" class="img-wrap style-2">
+						<a href="index.php?controller=RentProperty&action=hoavang" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Hòa Vang</h4>
@@ -197,7 +197,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="index.php?controller=RentRoom&action=camle" class="img-wrap style-2">
+						<a href="index.php?controller=RentProperty&action=camle" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Cẩm Lệ</h4>
@@ -209,7 +209,7 @@
 
 					<!-- Single Location -->
 					<div class="col-lg-3 col-md-3 col-sm-6">
-						<a href="index.php?controller=RentRoom&action=hoangsa" class="img-wrap style-2">
+						<a href="index.php?controller=RentProperty&action=hoangsa" class="img-wrap style-2">
 							<div class="location_wrap_content visible">
 								<div class="location_wrap_content_first">
 									<h4>Hoàng Sa</h4>
@@ -241,7 +241,7 @@
 
 				<div id="property_list" class="row justify-content-center">
 
-					
+
 					<?php foreach ($result as $row) { ?>
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
 							<div class="property-listing list_view">
@@ -326,7 +326,7 @@
 					<!-- End Single Property -->
 				</div>
 
-				
+
 				<script src="public/js/search.js"></script>
 			</div>
 		</section>

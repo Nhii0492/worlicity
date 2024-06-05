@@ -5222,15 +5222,15 @@ li.login-attri .account-drop a {
 	font-size: 35px;
 }
 
-.select-search{
-	width: 1000px; 
+.select-search {
+	width: 1000px;
 	height: 70px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	background-color: #fff;
-	margin-top: 20px;
-	border-radius:5px;
+	/* margin-top: 20px; */
+	border-radius: 5px;
 }
 .btn.search-btn {
 	background: #00966a;
@@ -8352,7 +8352,6 @@ a._calss_tyui {
 	margin-bottom: 0;
 }
 .property-listing.list_view .list-img-slide {
-
 	overflow: hidden;
 	position: relative;
 	min-height: 200px;

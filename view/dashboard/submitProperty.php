@@ -78,7 +78,7 @@ $loggedIn = $loginModel->isLoggedIn();
                 <div class="col-lg-12 col-md-12">
 
                     <div class="alert alert-info" role="alert">
-                        <p>Mọi thông tin chi tiết xin liên hệ CSKH - Worlicity <a href="#">Tại đây</a></p>
+                        <p>Mọi thông tin chi tiết xin liên hệ CSKH - Worlicity <a href="index.php?controller=Contact&action=index">Tại đây</a></p>
                     </div>
 
                 </div>

@@ -28,7 +28,10 @@ class LoginController
                 echo '<script>window.location.href = "index.php?controller=Home&action=index";</script>';
             } else {
                 // Đăng nhập không thành công, hiển thị thông báo lỗi
-                echo 'Lỗi đăng nhập';
+                // echo 'Lỗi đăng nhập';
+                // $_SESSION['error'] = 'Tên đăng nhập hoặc mật khẩu không đúng';
+                echo '<script>window.location.href = "index.php";</script>';
+                exit();
             }
         }
     }
@@ -48,7 +51,10 @@ class LoginController
                 echo '<script>window.location.href = "index.php?controller=Home&action=index";</script>';
             } else {
                 // Đăng ký không thành công, hiển thị thông báo lỗi
-                echo 'Lỗi đăng ký';
+                // echo 'Lỗi đăng ký';
+                // $_SESSION['error'] = 'Đăng ký không thành công. Vui lòng thử lại';
+                echo '<script>window.location.href = "index.php";</script>';
+                exit();
             }
         }
     }
