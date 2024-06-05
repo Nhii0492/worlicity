@@ -2,9 +2,9 @@
 
 ## **Sản phẩm phục vụ cho Đồ án Công nghệ phần mềm, lớp 20PFIEV3**
 
-**Lecturer:** _TS. Lê Thị Mỹ Hạnh_
+**Giảng viên:** _TS. Lê Thị Mỹ Hạnh_
 
-**Students:**
+**Sinh viên:**
 
 - _Trần Thành Nhân_
 
