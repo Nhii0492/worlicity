@@ -79,15 +79,7 @@
                                 <div class="frm_submit_wrap">
                                     <div class="form-row">
 
-                                        <!-- <div class="form-group col-md-6">
-                                            <label>Facebook</label>
-                                            <input type="text" name="facebook" class="form-control" value="<?php echo $user['facebook']; ?>">
-                                        </div> -->
-
-                                        <!-- <div class="form-group col-md-6">
-                                        <label>LinkedIn</label>
-                                        <input type="text" name="linkedin" class="form-control" value="<?php echo $user['linkedin']; ?>">
-                                    </div> -->
+                                     
 
                                         <div class="form-group col-lg-12 col-md-12 mt-0">
                                             <button class="btn btn-theme btn-lg" type="submit" name="submit">Cập nhật</button>

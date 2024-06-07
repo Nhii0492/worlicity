@@ -141,19 +141,7 @@
                                                         </div>
                                                         <div class="_leads_view_title"><span>Worlicity</span></div>
                                                     </td>
-                                                    <!-- <td>
-                                                        <div class="_leads_status"><span class="<?php echo ($property['status'] === 'Thuê') ? 'expire' : (($property['status'] === 'Bán') ? 'active' : ''); ?>">
-                                                                <?php echo $property['status']; ?>
-                                                            </span>
-                                                        </div>
-                                                        <div class="_leads_view_title"><span><?php echo date('d M y', strtotime($property['created_at'])); ?></span></div>
-                                                    </td> -->
-                                                    <!-- <td>
-                                                        <div class="_leads_action">
-                                                            <a href="#"><i class="fas fa-edit"></i></a>
-                                                            <a href="#"><i class="fas fa-trash"></i></a>
-                                                        </div>
-                                                    </td> -->
+                                                
                                                 </tr>
                                             <?php endforeach; ?>
 

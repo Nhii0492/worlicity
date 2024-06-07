@@ -24,19 +24,9 @@ require_once("verify.php");
                 <li><a href="index.php?controller=DashBoard&action=admin_account"><i class="fa fa-users"></i>Quản lý tài khoản</a></li>
                 <li><a href="index.php?controller=DashBoard&action=admin_property"><i class="fa fa-folder"></i>Quản lý tin cho thuê</a></li>
                 <li><a href="index.php?controller=DashBoard&action=admin_news"><i class="fa fa-newspaper"></i>Quản lý blogs</a></li>
-                <!-- <li><a href="index.php?controller=DashBoard&action=messages"><i class="fa fa-list-alt"></i>Quản lý giao dịch <span class="notti_coun style-3">3</span></a></li>
-                <li><a href="index.php?controller=DashBoard&action=package"><i class="fa fa-gift"></i>Quản lý gói dịch vụ<span class="expiration">10 days left</span></a></li>
-                <li><a href="index.php?controller=DashBoard&action=newProperty"><i class="fa fa-cogs"></i>Tùy chọn giao diện</a></li>
-                <li><a href="index.php?controller=DashBoard&action=changePassword"><i class="fa fa-unlock-alt"></i>Đổi mật khẩu</a></li> -->
             </ul>
         </div>
 
-        <!-- <div class="dash_user_footer">
-            <ul>
-                <li><a href="#"><i class="fa fa-power-off"></i></a></li>
-                <li><a href="?controller=DashBoard&action=index"><i class="fa fa-cog"></i></a></li><!-- khi ấn vào biểu tương này chuyển sang sidebar admin -->
-        <!--</ul>
-        </div> -->
     </div>
 </div>
 <!-- -------------------------------- -->

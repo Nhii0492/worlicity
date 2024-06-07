@@ -426,21 +426,6 @@ require_once "model/Property.php";
 	<script src="public/js/ajaxjs.js"></script>
 	<!-- ============================================================== -->
 
-
-	<!-- ============================================================== -->
-	<!-- <script>
-// Format price input
-document.getElementById('price').addEventListener('input', function (e) {
-    // Remove any non-digit characters
-    var value = this.value.replace(/\D/g, '');
-
-    // Format the value as price
-	value = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value);
-    // Update the input value
-    this.value = value;
-});
-</script> -->
-	<!-- ============================================================== -->
 	<script>
 		tinymce.init({
 			selector: '#description',
@@ -479,7 +464,6 @@ document.getElementById('price').addEventListener('input', function (e) {
 		});
 	</script>
 	<!-- ============================================================== -->
-	<!-- Over 4 image -->
 
 
 	<!-- ============================================================== -->

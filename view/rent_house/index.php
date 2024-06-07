@@ -34,13 +34,7 @@ $utilitiesResult = $conn->query($utilitiesQuery);
         <div class="row m-0">
             <div class="short_wraping">
                 <div class="row align-items-right">
-                    <!-- <div class="col-lg-3 col-md-6 col-sm-12  col-sm-6">
-                        <ul class="shorting_grid">
-                            <li class="list-inline-item"><a href="grid-layout-with-sidebar.html" class="active"><span class="ti-layout-grid2"></span>Grid</a></li>
-                            <li class="list-inline-item"><a href="list-layout-with-sidebar.html"><span class="ti-view-list"></span>List</a></li>
-                            <li class="list-inline-item"><a href="#"><span class="ti-map-alt"></span>Map</a></li>
-                        </ul>
-                    </div> -->
+                 
 
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <!-- order-lg-2 order-md-3 elco_bor col-sm-12 -->

@@ -204,9 +204,7 @@
 
 					<a href="<?php echo $zalo_link ?>" class="agent-btn-contact"><i class="ti-comment-alt"></i>Nhắn Zalo</a>
 
-					<!-- <span id="number">
-						<span><i class="fa-phone-alt"><a></i><?php echo $property['phone_number']; ?></a></span>
-					</span> -->
+					
 				</div>
 			</div>
 

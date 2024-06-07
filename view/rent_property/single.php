@@ -127,9 +127,7 @@
 							<li class="col-lg-4 col-md-6 mb-2 p-0"><i class="fa fa-bed mr-1"></i><?php echo $property['bedroom_count']; ?> Phòng ngủ</li>
 							<li class="col-lg-4 col-md-6 mb-2 p-0"><i class="fa fa-bath mr-1"></i><?php echo $property['bathroom_count']; ?> Phòng tắm</li>
 							<li class="col-lg-4 col-md-6 mb-2 p-0"><i class="fa fa-expand-arrows-alt mr-1"></i><?php echo $property['real_area']; ?> m<sup>2</li>
-							<!-- <li class="col-lg-4 col-md-6 mb-2 p-0"><i class="fa fa-house-damage mr-1"></i>1 Living Rooms</li> -->
 							<li class="col-lg-4 col-md-6 mb-2 p-0"><i class="fa fa-building mr-1"></i>Năm xây dựng: <?php echo $property['age']; ?></li>
-							<!-- <li class="col-lg-4 col-md-6 mb-2 p-0"><i class="fa fa-utensils mr-1"></i>2 Kitchens </li> -->
 						</ul>
 					</div>
 
@@ -171,7 +169,6 @@
 									?> -->
 
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12730.62177161898!2d108.20464098328773!3d16.047465492630653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c792252a13%3A0xfc14e3a044436487!2zxJDDoCBO4bq1bmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1715178431515!5m2!1svi!2s" class="full-width" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-							<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.840161885604!2d108.20636069999999!3d16.0737821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142184ee294da37%3A0x483b1b02b6eec8a5!2zS2nhu4d0IDE5NiBUcuG6p24gQ2FvIFbDom4sIFRoYW5oIEtow6osIMSQw6AgTuG6tW5nIDU1MDAwMA!5e0!3m2!1svi!2s!4v1715177104106!5m2!1svi!2s" class="full-width" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
 						</div>
 					</div>
 				</div>

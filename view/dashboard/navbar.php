@@ -27,12 +27,7 @@
             </ul>
         </div>
 
-        <!-- <div class="dash_user_footer">
-            <ul>
-                <li><a href="index.php?controller=Logout&action=index"><i class="fa fa-power-off"></i></a></li>
-                <li><a href="?controller=DashBoard&action=admin_dashboard"><i class="fa fa-cog"></i></a></li><!-- khi ấn vào biểu tương này chuyển sang sidebar admin -->
-        <!-- </ul>
-        </div> -->
+      
     </div>
 </div>
 <!-- -------------------------------- -->
