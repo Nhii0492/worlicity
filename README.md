@@ -1,4 +1,4 @@
-# Worlicity - Website tìm kiếm phòng trọ, nhà trọ, căn hộ,... tại thành phố Đà Nẵng
+# Worlicity - XÂY DỰNG WEBSITE VÀ ỨNG DỤNG TÌM KIẾM PHÒNG TRỌ TẠI ĐÀ NẴNG
 
 ## **Sản phẩm phục vụ cho Đồ án Công nghệ phần mềm, lớp 20PFIEV3**
 
