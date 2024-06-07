@@ -36,11 +36,10 @@
                                 <!-- Item #1 -->
                                 <?php foreach ($newsList as $news) : ?>
                                     <tr>
-
                                         <td class="dashboard_propert_wrapper">
                                             <img src="public/upload/news/<?php echo $news['news_image']; ?>" alt="">
                                             <div class="title">
-                                                <h4><a href="#"><?php echo $news['title']; ?></a></h4>
+                                                <h4><a href="index.php?controller=Blog&action=blog&newsId=<?php echo $news['news_id']; ?>"><?php echo $news['title']; ?></a></h4>
                                                 <span><i class="fa fa-user-circle"></i> Tác giả: <?php echo $news['author_fullname']; ?></span>
                                                 <span><i class="fa fa-eye"></i> <?php echo $news['view_count']; ?> lượt xem</span>
                                                 <?php foreach ($news['tags'] as $tag) : ?>

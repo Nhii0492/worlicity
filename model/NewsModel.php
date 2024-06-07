@@ -33,6 +33,56 @@ class NewsModel
     }
 
 
+// Thêm phương thức sửa bài viết
+public function updateNews($newsId, $title, $content, $news_image, $tags)
+{
+    $query = "UPDATE news_blog SET title = :title, content = :content, news_image = :news_image WHERE news_id = :news_id";
+    $stmt = $this->db->prepare($query);
+    $params = array(
+        ':news_id' => $newsId,
+        ':title' => $title,
+        ':content' => $content,
+        ':news_image' => $news_image
+    );
+    $result = $stmt->execute($params);
+
+    // Cập nhật tags của bài viết
+    if ($result) {
+        // Xóa các tags cũ
+        $deleteQuery = "DELETE FROM news_tags WHERE news_id = :news_id";
+        $deleteStmt = $this->db->prepare($deleteQuery);
+        $deleteStmt->bindParam(':news_id', $newsId);
+        $deleteStmt->execute();
+
+        // Thêm các tags mới
+        if (!empty($tags)) {
+            foreach ($tags as $tag_id) {
+                $insertQuery = "INSERT INTO news_tags (news_id, tags_id) VALUES (:news_id, :tags_id)";
+                $insertStmt = $this->db->prepare($insertQuery);
+                $insertStmt->bindParam(':news_id', $newsId);
+                $insertStmt->bindParam(':tags_id', $tag_id);
+                $insertStmt->execute();
+            }
+        }
+    }
+    return $result;
+}
+
+// Thêm phương thức xóa bài viết
+public function deleteNews($newsId)
+{
+    // Xóa tags của bài viết
+    $deleteTagsQuery = "DELETE FROM news_tags WHERE news_id = :news_id";
+    $deleteTagsStmt = $this->db->prepare($deleteTagsQuery);
+    $deleteTagsStmt->bindParam(':news_id', $newsId);
+    $deleteTagsStmt->execute();
+
+    // Xóa bài viết
+    $query = "DELETE FROM news_blog WHERE news_id = :news_id";
+    $stmt = $this->db->prepare($query);
+    $stmt->bindParam(':news_id', $newsId);
+    return $stmt->execute();
+}
 
     public function getNewsWithDetails($newsId)
     {

@@ -59,8 +59,7 @@
                                                 <th scope="col" class="m2_hide">Thời gian đăng</th>
                                                 <th scope="col" class="m2_hide">Lượt truy cập</th>
                                                 <th scope="col" class="m2_hide">Ngày đăng</th>
-                                                <th scope="col">Status</th>
-                                                <th scope="col">Action</th>
+                                                <th scope="col">Hành động</th> 
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -73,14 +72,14 @@
                                                                 <img src="public/upload/properties/<?php echo $property['image_url']; ?>" class="img-fluid" alt="" />
                                                             </div>
                                                             <div class="dash_prt_caption">
-                                                                <h5>
-                                                                    <?php
-                                                                    $property_name = $property['property_name'];
-                                                                    if (strlen($property_name) > 53) {
-                                                                        $property_name = substr($property_name, 0, 50) . '...';
-                                                                    }
-                                                                    echo htmlentities($property_name);
-                                                                    ?>
+                                                                <h5><a href="index.php?controller=RentRoom&action=single&property_id=<?php echo $property['property_id']; ?>">
+                                                                        <?php
+                                                                        $property_name = $property['property_name'];
+                                                                        if (strlen($property_name) > 53) {
+                                                                            $property_name = substr($property_name, 0, 50) . '...';
+                                                                        }
+                                                                        echo htmlentities($property_name);
+                                                                        ?>
                                                                 </h5>
                                                                 <div class="prt_dashb_lot">
                                                                     <?php
@@ -133,28 +132,21 @@
                                                         <div class="_leads_view">
                                                             <h5 class="up"><?php echo $property['view_count']; ?></h5>
                                                         </div>
-                                                        <div class="_leads_view_title"><span>Total Views</span></div>
+                                                        <div class="_leads_view_title"><span>Tổng lượt xem</span></div>
                                                     </td>
                                                     <td class="m2_hide">
                                                         <div class="_leads_posted">
                                                             <h5><?php echo date('d M - H:i', strtotime($property['created_at'])); ?></h5>
                                                         </div>
 
-                                                    </td>
-                                                    <td>
-                                                        <div class="_leads_status"><span class="<?php echo ($property['property_status'] === 'Thuê') ? 'expire' : (($property['property_status'] === 'Bán') ? 'active' : ''); ?>">
-                                                                <!-- <?php echo $property['property_status']; ?> -->
-                                                                Hoạt động
-                                                            </span>
-                                                        </div>
-                                                        <div class="_leads_view_title"><span><?php echo date('d M y', strtotime($property['created_at'])); ?></span></div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="_leads_action">
+                                                    </td >
+                                                    <td class="m2_hide">
+                                                    <div class="_leads_action">
                                                             <a href="#"><i class="fas fa-edit"></i></a>
                                                             <a href="#"><i class="fas fa-trash"></i></a>
                                                         </div>
                                                     </td>
+    
                                                 </tr>
                                             <?php endforeach; ?>
 

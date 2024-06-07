@@ -59,8 +59,8 @@
                                                 <th scope="col" class="m2_hide">Số ngày</th>
                                                 <th scope="col" class="m2_hide">Số liệu thống kê</th>
                                                 <th scope="col" class="m2_hide">Ngày đăng</th>
-                                                <th scope="col">Trạng thái</th>
-                                                <th scope="col">Hành động</th>
+                                                <!-- <th scope="col">Trạng thái</th>
+                                                <th scope="col">Hành động</th> -->
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -73,14 +73,14 @@
                                                                 <img src="public/upload/properties/<?php echo $property['image_url']; ?>" class="img-fluid" alt="" />
                                                             </div>
                                                             <div class="dash_prt_caption">
-                                                                <h5>
-                                                                    <?php
-                                                                    $property_name = $property['property_name'];
-                                                                    if (strlen($property_name) > 43) {
-                                                                        $property_name = substr($property_name, 0, 40) . '...';
-                                                                    }
-                                                                    echo htmlentities($property_name);
-                                                                    ?>
+                                                                <h5><a href="index.php?controller=RentRoom&action=single&property_id=<?php echo $property['property_id']; ?>">
+                                                                        <?php
+                                                                        $property_name = $property['property_name'];
+                                                                        if (strlen($property_name) > 73) {
+                                                                            $property_name = substr($property_name, 0, 70) . '...';
+                                                                        }
+                                                                        echo htmlentities($property_name);
+                                                                        ?>
                                                                 </h5>
                                                                 <div class="prt_dashb_lot">
                                                                     <?php
@@ -141,19 +141,19 @@
                                                         </div>
                                                         <div class="_leads_view_title"><span>Worlicity</span></div>
                                                     </td>
-                                                    <td>
+                                                    <!-- <td>
                                                         <div class="_leads_status"><span class="<?php echo ($property['status'] === 'Thuê') ? 'expire' : (($property['status'] === 'Bán') ? 'active' : ''); ?>">
                                                                 <?php echo $property['status']; ?>
                                                             </span>
                                                         </div>
                                                         <div class="_leads_view_title"><span><?php echo date('d M y', strtotime($property['created_at'])); ?></span></div>
-                                                    </td>
-                                                    <td>
+                                                    </td> -->
+                                                    <!-- <td>
                                                         <div class="_leads_action">
                                                             <a href="#"><i class="fas fa-edit"></i></a>
                                                             <a href="#"><i class="fas fa-trash"></i></a>
                                                         </div>
-                                                    </td>
+                                                    </td> -->
                                                 </tr>
                                             <?php endforeach; ?>
 
