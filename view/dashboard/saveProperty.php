@@ -51,7 +51,7 @@
                                             </div>
                                         </td>
                                         <td class="action">
-                                            <a href="#" class="delete"><i class="ti-close"></i> Delete</a>
+                                            <a href="#" class="delete"><i class="ti-close"></i> Xoá</a>
                                         </td>
 
                                     </tr>

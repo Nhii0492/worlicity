@@ -54,7 +54,7 @@
 
 				<div class="search" style="height:60px; display: flex;justify-content: space-around;align-items: center; ">
 					<form action="" method="GET" style="background-color:#fff; border-radius:5px;">
-						<div class="select-search" style="height:75px; display: flex;     align-items: center;">
+						<div class="select-search" style="height:75px; display: flex;     align-items: center;margin-top:0">
 							<select id="type" name="propertyType" style="width:150px; height:50px; border:0; padding-left: 5px">
 								<option value="">Loại phòng</option>
 								<?php while ($row = $propertyTypesResult->fetch(PDO::FETCH_ASSOC)) { ?>
